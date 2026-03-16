@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* =========================
+   FOOTER WRAPPER
+========================= */
+
+.footer {
+    height: 50vh;
+  position: relative;
+  background: linear-gradient(135deg, #1e1b2e, #232345);
+  color: #ffffff;
+  padding: 120px 8% 160px 8%;
+  overflow: hidden;
+}
+
+/* Background image layer */
+.footer-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15; /* adjust as needed */
+  z-index: 0;
+}
+
+/* Main Content */
+.footer-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   LEFT SECTION
+========================= */
+
+.footer-left h2 {
+    margin-top: -60px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.footer-meta {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  color: #cbd5e1;
+  margin-bottom: 60px;
+}
+
+/* =========================
+   RIGHT SECTION
+========================= */
+
+.footer-right {
+  display: flex;
+  gap: 80px;
+}
+
+.footer-right h4 {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #9ca3af;
+  letter-spacing: 1px;
+}
+
+.footer-right a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  margin-bottom: 12px;
+  transition: 0.3s ease;
+}
+
+.footer-right a:hover {
+  color: #facc15;
+}
+
+/* =========================
+   BIG BRAND TEXT
+========================= */
+
+.footer-brand {
+  position: absolute;
+  bottom: -40px;
+  top: 50%;
+  left: 8%;
+  font-size: 220px;
+  font-weight: 900;
+  color: #FFFFFF;
+  letter-spacing: 10px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* =========================
+   BOTTOM RIGHT IMAGE
+========================= */
+
+.footer-hand {
+  position: absolute;
+  bottom: 0;
+  top: 70%;
+  right: 4%;
+  width: 220px;
+  z-index: 2;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .footer-right {
+    gap: 60px;
+  }
+
+  .footer-left h2 {
+    font-size: 36px;
+  }
+
+  .footer-brand {
+    font-size: 140px;
+  }
+
+  .footer-hand {
+    width: 160px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-brand {
+    font-size: 100px;
+  }
+
+  .footer-hand {
+    width: 120px;
+  }
+
+  .footer-meta {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
