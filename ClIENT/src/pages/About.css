@@ -1043,3 +1043,111 @@
     .about_features__card:hover{
     color:#dcdcdc;
     }
+
+    /* ================= LAPTOP ================= */
+
+@media (max-width:1200px){
+
+  .about_features{
+  padding:100px 6%;
+  }
+  
+  .about_features__container{
+  grid-template-columns:repeat(2,1fr);
+  gap:50px;
+  }
+  
+  .about_features__number{
+  font-size:90px;
+  top:-70px;
+  }
+  
+  .about_features__card h3{
+  font-size:22px;
+  }
+  
+  }
+  
+  
+  
+  /* ================= TABLET ================= */
+  
+  @media (max-width:992px){
+  
+  .about_features__container{
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  }
+  
+  .about_features__number{
+  font-size:80px;
+  top:-60px;
+  }
+  
+  }
+  
+  
+  
+  /* ================= MOBILE ================= */
+  
+  @media (max-width:768px){
+  
+  .about_features{
+  padding:80px 6%;
+  }
+  
+  .about_features__container{
+  grid-template-columns:1fr;
+  gap:60px;
+  }
+  
+  /* center cards */
+  
+  .about_features__card{
+  text-align:center;
+  }
+  
+  /* fix big number position */
+  
+  .about_features__number{
+  position:static;
+  display:block;
+  font-size:70px;
+  margin-bottom:10px;
+  }
+  
+  /* spacing fix */
+  
+  .about_features__card h3{
+  font-size:20px;
+  }
+  
+  .about_features__card p{
+  font-size:14px;
+  }
+  
+  }
+  
+  
+  
+  /* ================= SMALL MOBILE ================= */
+  
+  @media (max-width:480px){
+  
+  .about_features{
+  padding:60px 5%;
+  }
+  
+  .about_features__number{
+  font-size:55px;
+  }
+  
+  .about_features__card h3{
+  font-size:18px;
+  }
+  
+  .about_features__card p{
+  font-size:13px;
+  }
+  
+  }
