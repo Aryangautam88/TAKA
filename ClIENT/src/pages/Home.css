@@ -34,8 +34,7 @@ body {
 .trusted-header h1 {
     font-family: "Unbounded", sans-serif;
     margin-top: -40px;
-    font-size: 48
-    px;
+    font-size: 48px;
     font-weight: 800;
     color: #222430;
     line-height: 1.2;
@@ -43,7 +42,7 @@ body {
 }
 
 .trusted-header p {
-    font-size: 18px;
+    font-size: 15px;
     font-family: "Montserrat", sans-serif;
     color: #6b7280;
     max-width: 650px;
@@ -196,7 +195,7 @@ body {
     top: -140px;
     font-size: 220px;
     font-weight: 800;
-    background: linear-gradient(to bottom, rgb(163, 163, 244), #ffffff);
+    background: linear-gradient(179.69deg, #8d98eb 0.27%, #FFFFFF 72.39%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
