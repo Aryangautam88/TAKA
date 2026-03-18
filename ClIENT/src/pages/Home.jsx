@@ -10,13 +10,15 @@ import s3 from "../assets/service3.jpg";
 import s4 from "../assets/service4.jpg";
 import stepIcon from "../assets/stepIcon.png";
 import diamond from "../assets/dimond.png";
-import infinity from "../assets/infinity.png";
+// import infinity from "../assets/infinity.png";
 import client1 from "../assets/client1.png";
 import client2 from "../assets/client2.png";
 import leftImg from "../assets/lefthome.png";
 import rightImg from "../assets/righthome.png";
 import paperIcon from "../assets/boat.png";
 import center from "../assets/center.png";
+import frame from "../assets/Influencer_Card.png";
+// import mobileCenter from "../assets/mobileCenter.png";
 
 const offersData = [
     { title: "Lorem Ipsum" },
@@ -159,394 +161,382 @@ const Home = () => {
             {/*-------------------------------- Top -----------------------------*/}
 
             <section className="trusted-section">
-      
-      {/* Upper Text */}
-      <div className="trusted-header">
-        <h1>
-          Built With The Tools Your <br />
-          Customers Already Trust
-        </h1>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        </p>
-      </div>
 
-      {/* Image Container */}
-      <div className="trusted-image-wrapper">
-        <img src={center} alt="Showcase" />
-      </div>
+                {/* Upper Text */}
+                <div className="trusted-header">
+                    <h1>
+                        Indore’s First Verified Creator Network. <br />
+                        Influence. Commerce. Connected.
+                    </h1>
+                    <p>
+                        Bridging the gap between top-tier local creators and premium brands. No more cold DMs. No more fake engagement. Just seamless collaborations and measurable foot traffic.
+                    </p>
+                </div>
 
-    </section>
+                {/* Image Container */}
+                <div className="trusted-image-wrapper">
+                    <img src={center} alt="Showcase" className="desktop-img" />
+                    {/* <img src={mobileCenter} alt="Showcase Mobile" className="mobile-img" /> */}
+                </div>
+
+            </section>
 
             {/*------------------------------- tools----------------------------- */}
 
-                <section className="tools">
+            <section className="tools">
 
-                    <div className="tools__container">
+                <div className="tools__container">
 
-                        {/* BIG BACKGROUND NUMBER */}
-                        <div className="tools__bgNumber">10+</div>
+                    {/* BIG BACKGROUND NUMBER */}
+                    <div className="tools__bgNumber">10+</div>
 
-                        {/* LEFT CONTENT */}
-                        <div className="tools__left">
+                    {/* LEFT CONTENT */}
+                    <div className="tools__left">
 
-                            <h2 className="tools__title">
-                                Built With The Tools Your
-                            
-                                Customers Already Trust
-                            </h2>
+                        <h2 className="tools__title">
+                            WHO WE ARE ! <br />
 
-                            <p className="tools__desc">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry. Lorem Ipsum has been the industry's standard dummy
-                                text ever since the 1500s,
-                            </p>
+                            We are redefining local marketing.
+                        </h2>
 
-                            <button className="tools__btn">
-                                <span>FIND OUT MORE</span>
-                                <i>↗</i>
-                            </button>
-
-                        </div>
-
-                        {/* RIGHT IMAGE (single image containing 4 people) */}
-                        <div className="tools__right">
-                            <img src={toolsImg} alt="trusted tools users" />
-                        </div>
-
-                    </div>
-
-                </section>
-
-            {/*------------------------------- card ----------------------------*/}
-
-                <section className="offers">
-
-                    {/* header */}
-                    <div className="offers__header">
-                        <h2>WHAT WE<br />OFFER</h2>
-
-                        <div className="headerLines">
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
-
-                    {/* cards */}
-                    <div className="offers__grid">
-
-                        {offersData.map((item, i) => (
-                            <div className="offerCard" key={i}>
-
-                                <img src={target} alt="" className="offerIcon" />
-
-                                <h3>{item.title}</h3>
-
-                                {/* animated button */}
-                                <button
-                                    className={`offerBtn ${active === i ? "active" : ""}`}
-                                    onClick={() => setActive(i)}
-                                >
-                                    <span>FIND OUT MORE</span>
-                                    <i>↗</i>
-                                </button>
-
-                            </div>
-                        ))}
-
-                    </div>
-
-                </section>
-
-            {/*-------------------------------services --------------------------*/}
-
-                <section className="services">
-
-                    {/* header */}
-                    <div className="services__top">
-                        <div>
-                            <span className="smallTitle">HOW WE CAN HELP YOU</span>
-                            <h2>Our Services</h2>
-                        </div>
-
-                        <p className="services__desc">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                        <p className="tools__desc">
+                            TAKA is an exclusive, data-driven platform built for Indore's creator economy. We realized the old way of local marketing is broken—creators hate sending cold DMs, and brands are tired of paying for empty metrics. We built TAKA to solve both, creating a seamless pipeline between authentic storytelling and real commerce.
                         </p>
-                    </div>
 
-                    {/* slider */}
-                    <div className="services__slider">
-
-                        <div
-                            className="services__track"
-                            style={{ transform: `translateX(-${index * 100}%)` }}
-                        >
-                            {servicesData.map((service, i) => (
-                                <div className="serviceCard" key={i}>
-                                    <img src={service.img} alt="" />
-
-                                    <div className="overlay">
-                                        <span className="serviceId">[{service.id}]</span>
-                                        <h3>{service.title}</h3>
-                                        <p>{service.desc}</p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-
-                        {/* arrow */}
-                        <button className="nextBtn" onClick={nextSlide}>
-                            →
+                        <button className="tools__btn">
+                            <span>Find Out More ➔</span>
+                            <i>↗</i>
                         </button>
 
                     </div>
-                </section>
+
+                    {/* RIGHT IMAGE (single image containing 4 people) */}
+                    <div className="tools__right">
+                        <img src={toolsImg} alt="trusted tools users" />
+                    </div>
+
+                </div>
+
+            </section>
+
+            {/*------------------------------- card ----------------------------*/}
+
+            <section className="offers">
+
+                {/* header */}
+                <div className="offers__header">
+                    <h2>WHAT WE<br />OFFER</h2>
+
+                    <div className="headerLines">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                {/* cards */}
+                <div className="offers__grid">
+
+                    {offersData.map((item, i) => (
+                        <div className="offerCard" key={i}>
+
+                            <img src={target} alt="" className="offerIcon" />
+
+                            <h3>{item.title}</h3>
+
+                            {/* animated button */}
+                            <button
+                                className={`offerBtn ${active === i ? "active" : ""}`}
+                                onClick={() => setActive(i)}
+                            >
+                                <span>FIND OUT MORE  ➔</span>
+                                
+                            </button>
+
+                        </div>
+                    ))}
+
+                </div>
+
+            </section>
+
+            {/*-------------------------------services --------------------------*/}
+
+            <section className="services">
+
+                {/* header */}
+                <div className="services__top">
+                    <div>
+                        <span className="smallTitle">HOW WE CAN HELP YOU</span>
+                        <h2>Our Services</h2>
+                    </div>
+
+                    <p className="services__desc">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    </p>
+                </div>
+
+                {/* slider */}
+                <div className="services__slider">
+
+                    <div
+                        className="services__track"
+                        style={{ transform: `translateX(-${index * 100}%)` }}
+                    >
+                        {servicesData.map((service, i) => (
+                            <div className="serviceCard" key={i}>
+                                <img src={service.img} alt="" />
+
+                                <div className="overlay">
+                                    <span className="serviceId">[{service.id}]</span>
+                                    <h3>{service.title}</h3>
+                                    <p>{service.desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* arrow */}
+                    <button className="nextBtn" onClick={nextSlide}>
+                        →
+                    </button>
+
+                </div>
+            </section>
 
 
             {/* -------------------------------process-------------------------- */}
 
-                <section className="process">
+            <section className="process">
 
-                    {/* heading */}
-                    <div className="process__header">
-                        <div className="process__title">
-                            <h2>
-                                <span className="outline">STEPS</span>
-                                <br />
-                                WE DO
-                            </h2>
+                {/* heading */}
+                <div className="process__header">
+                    <div className="process__title">
+                        <h2>
+                            <span className="outline">STEPS</span>
+                            <br />
+                            WE DO
+                        </h2>
 
-                            <div className="workProcessText">
-                                WORK<br />PROCESS
-                            </div>
+                        <div className="workProcessText">
+                            WORK<br />PROCESS
                         </div>
-
-                        {/* top right decorative image */}
-                        <img src={diamond} alt="" className="diamondShape" />
                     </div>
 
+                    {/* top right decorative image */}
+                    <img src={diamond} alt="" className="diamondShape" />
+                </div>
 
-                    {/* cards */}
-                    <div className="process__grid">
 
-                        {steps.map((step, i) => (
-                            <div className={`processCard card${i + 1}`} key={i}>
+                {/* cards */}
+                <div className="process__grid">
 
-                                <div className="stepNumber">{step.number}</div>
+                    {steps.map((step, i) => (
+                        <div className={`processCard card${i + 1}`} key={i}>
 
-                                <div className="iconBox">
-                                    <img src={stepIcon} alt="" />
-                                </div>
+                            <div className="stepNumber">{step.number}</div>
 
-                                <p>{step.title}</p>
-
+                            <div className="iconBox">
+                                <img src={stepIcon} alt="" />
                             </div>
-                        ))}
 
-                        {/* center circle CTA */}
-                        <div className="startCircle">
-                            LET’S<br />START
+                            <p>{step.title}</p>
+
                         </div>
+                    ))}
 
+                    {/* center circle CTA */}
+                    <div className="startCircle">
+                        LET’S<br />START
                     </div>
-                </section>
+
+                </div>
+            </section>
 
             {/*--------------------------------CLIENTS ---------------------------*/}
 
 
-                <div className="clients">
-                    <div className="clients__header">
-                        <h2 className="clients__title">
-                            INFLUENSO <br /> ORIGINALS <span>  OUR CLIENTS</span>
-                        </h2>
+            <div className="clients">
+                <div className="clients__header">
+                    <h2 className="clients__title">
+                        INFLUENSO <br /> ORIGINALS <span>  OUR CLIENTS</span>
+                    </h2>
 
-                        <p className="clients__desc">
-                            We collaborate with influencers and businesses worldwide,
-                            creating successful brand partnerships and campaigns
-                            creating successful brand partnerships and campaigns.
-                        </p>
-                    </div>
-
-                    {/* const clients = [client1, client2, client1, client2]; */}
-
-                    <div className="clients__slider">
-
-                        <div className="clients__track">
-                            {[...clients, ...clients].map((img, i) => (
-                                <div className="clientCard" key={i}>
-
-                                    {i % 2 === 0 && (
-                                        <div className="badge top">
-                                            <img src={infinity} alt="" />
-                                        </div>
-                                    )}
-
-                                    <img src={img} alt="client" />
-
-                                    {i % 2 !== 0 && (
-                                        <div className="badge bottom">
-                                            <img src={infinity} alt="" />
-                                        </div>
-                                    )}
-
-                                </div>
-                            ))}
-                        </div>
-
-                    </div>
+                    <p className="clients__desc">
+                        We collaborate with influencers and businesses worldwide,
+                        creating successful brand partnerships and campaigns
+                        creating successful brand partnerships and campaigns.
+                    </p>
                 </div>
+
+                {/* const clients = [client1, client2, client1, client2]; */}
+
+                <div className="clients__slider">
+
+                    <div className="clients__track">
+                        {[...clients, ...clients].map((img, i) => (
+                            <div className="clientCard" key={i}>
+
+                                <div className="clientFrame">
+                                    <img src={frame} className="frameBg" alt="" />
+                                    <img src={img} className="clientImg" alt="client" />
+                                </div>
+
+                            </div>
+                        ))}
+                    </div>
+
+                </div>
+            </div>
 
 
             {/*---------------------------------STATS-------------------------------*/}
 
 
-                <div className="stats">
-                    <div className="stats__left">
-                        <h2 className="stats__title">OUR COMPANY STATS</h2>
-                        <p className="stats__desc">
-                            Numbers that reflect our growth, performance and commitment to brands that trust us.
-                        </p>
+            <div className="stats">
+                <div className="stats__left">
+                    <h2 className="stats__title">OUR COMPANY STATS</h2>
+                    <p className="stats__desc">
+                        Numbers that reflect our growth, performance and commitment to brands that trust us.
+                    </p>
+                </div>
+
+                <div className="stats__right">
+                    <div className="statCard">
+                        <h3 className="statCard__number">50+</h3>
+                        <p className="statCard__label">VERIFIED <br /> CREATORS</p>
+                        <span className="statCard__small">
+                            A highly curated, invite-only roster of Indore's most engaging digital talent.
+                        </span>
                     </div>
 
-                    <div className="stats__right">
-                        <div className="statCard">
-                            <h3 className="statCard__number">100+</h3>
-                            <p className="statCard__label">CLIENTS <br /> CENTERED</p>
-                            <span className="statCard__small">
-                                Numbers that reflect our growth, performance.
-                            </span>
-                        </div>
+                    <div className="statCard">
+                        <h3 className="statCard__number">20+</h3>
+                        <p className="statCard__label"> PREMIUM<br /> BRANDS</p>
+                        <span className="statCard__small">
+                             Partnering with the city's top cafes, event organizers, and lifestyle brands.
+                        </span>
+                    </div>
 
-                        <div className="statCard">
-                            <h3 className="statCard__number">10+</h3>
-                            <p className="statCard__label">BRANDS <br /> PARTNERED</p>
-                            <span className="statCard__small">
-                                Numbers that reflect our growth, performance.
-                            </span>
-                        </div>
+                    <div className="statCard">
+                        <h3 className="statCard__number">100%</h3>
+                        <p className="statCard__label">SEAMLESS <br /> COLLABS</p>
+                        <span className="statCard__small">
+                            Zero friction from the initial brand pitch to the final published post.                        </span>
+                    </div>
+                </div>
+            </div>
 
-                        <div className="statCard">
-                            <h3 className="statCard__number">5+</h3>
-                            <p className="statCard__label">YEARS <br /> EXPERIENCE</p>
-                            <span className="statCard__small">
-                                Numbers that reflect our growth, performance.
-                            </span>
-                        </div>
+
+            {/*-----------------------------testimonial--------------------------------*/}
+
+            <section className="testimonial-section">
+
+                <div className="title-row">
+                    <h2 className="title">
+                        WORDS OF PRAISE FROM OTHERS <br /> ABOUT OUR PRESENCE
+                    </h2>
+
+                    <div className="title-loader">
+                        <div className="loader-fill" id="loaderFill"></div>
                     </div>
                 </div>
 
-
-            {/*-------------------------------- testimonial------------------------------*/}
-
-                <section className="testimonial-section">
-
-                    <div className="title-row">
-                        <h2 className="title">
-                            WORDS OF PRAISE FROM OTHERS <br /> ABOUT OUR PRESENCE
-                        </h2>
-
-                        <div className="title-loader">
-                            <div className="loader-fill" id="loaderFill"></div>
-                        </div>
+                {/* ROW 1 */}
+                <div className="marquee">
+                    <div className="track">
+                        {[...testimonials, ...testimonials].map((t, i) => (
+                            <Card key={i} data={t} />
+                        ))}
                     </div>
+                </div>
 
-                    {/* ROW 1 */}
-                    <div className="marquee">
-                        <div className="track">
-                            {[...testimonials, ...testimonials].map((t, i) => (
-                                <Card key={i} data={t} />
-                            ))}
-                        </div>
+                {/* ROW 2 (reverse direction) */}
+                <div className="marquee reverse">
+                    <div className="track">
+                        {[...testimonials, ...testimonials].map((t, i) => (
+                            <Card key={i} data={t} />
+                        ))}
                     </div>
+                </div>
 
-                    {/* ROW 2 (reverse direction) */}
-                    <div className="marquee reverse">
-                        <div className="track">
-                            {[...testimonials, ...testimonials].map((t, i) => (
-                                <Card key={i} data={t} />
-                            ))}
-                        </div>
-                    </div>
-
-                </section>
+            </section>
 
 
             {/*------------------------------ contact ----------------------------------*/}
 
-                <section className="contact">
+            <section className="contact">
 
-                    {/* ===== TOP CONTACT PART ===== */}
-                    <div className="contact__wrapper">
+                {/* ===== TOP CONTACT PART ===== */}
+                <div className="contact__wrapper">
 
-                        {/* LEFT */}
-                        <div className="contact__left">
-                            <h2>We Would Love To<br />Hear From You</h2>
+                    {/* LEFT */}
+                    <div className="contact__left">
+                        <h2>We Would Love To <br />Hear From You</h2>
 
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry. Lorem Ipsum has been the industry's standard.
-                            </p>
+                        <p>
+                            Ready to drop the busy work? Whether you are a creator looking to join the exclusive roster, or a brand looking to scale your local reach, drop us a line.
+                        </p>
 
-                            {/* simple paper icon */}
-                            <div className="paperIcon">
-                                <img src={paperIcon} alt="paper illustration" />
-                            </div>
+                        {/* simple paper icon */}
+                        <div className="paperIcon">
+                            <img src={paperIcon} alt="paper illustration" />
                         </div>
+                    </div>
 
-                        {/* RIGHT FORM */}
-                        <form className="contact__form">
+                    {/* RIGHT FORM */}
+                    <form className="contact__form">
 
-                            <div className="form__row">
-                                <div className="inputGroup">
-                                    <label>Name</label>
-                                    <input type="text" required />
-                                </div>
-
-                                <div className="inputGroup">
-                                    <label>Email</label>
-                                    <input type="email" required />
-                                </div>
-                            </div>
-
+                        <div className="form__row">
                             <div className="inputGroup">
-                                <label>How we can help you?</label>
+                                <label>Name</label>
                                 <input type="text" required />
                             </div>
 
                             <div className="inputGroup">
-                                <label>Message</label>
-                                <textarea rows="3" required></textarea>
+                                <label>Email</label>
+                                <input type="email" required />
                             </div>
+                        </div>
 
-                            <button className="submitBtn">
-                                SUBMIT ↗
-                            </button>
+                        <div className="inputGroup">
+                            <label>How we can help you?</label>
+                            <input type="text" required />
+                        </div>
 
-                        </form>
+                        <div className="inputGroup">
+                            <label>Message</label>
+                            <textarea rows="3" required></textarea>
+                        </div>
 
+                        <button className="submitBtn">
+                            SUBMIT ➔
+                        </button>
+
+                    </form>
+
+                </div>
+
+
+                {/* ===== BOTTOM CTA ===== */}
+                <div className="community">
+
+                    <div className="community__card image">
+                        <img src={leftImg} alt="" />
                     </div>
 
-
-                    {/* ===== BOTTOM CTA ===== */}
-                    <div className="community">
-
-                        <div className="community__card image">
-                            <img src={leftImg} alt="" />
-                        </div>
-
-                        <div className="community__card center">
-                            <button className="newsletter">SUBSCRIBE TO NEWSLETTER</button>
-                            <h3>JOIN OUR INFLUENSO<br />COMMUNITY</h3>
-                        </div>
-
-                        <div className="community__card image">
-                            <img src={rightImg} alt="" />
-                        </div>
-
+                    <div className="community__card center">
+                        <button className="newsletter">SUBSCRIBE TO NEWSLETTER</button>
+                        <h3>JOIN OUR INFLUENSO<br />COMMUNITY</h3>
                     </div>
 
-                </section>
+                    <div className="community__card image">
+                        <img src={rightImg} alt="" />
+                    </div>
+
+                </div>
+
+            </section>
 
 
         </section>
