@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import "./Home.css";
 
@@ -13,9 +12,9 @@ import diamond from "../assets/dimond.png";
 // import infinity from "../assets/infinity.png";
 import client1 from "../assets/client1.png";
 import client2 from "../assets/client2.png";
-import leftImg from "../assets/lefthome.png";
-import rightImg from "../assets/righthome.png";
-import paperIcon from "../assets/boat.png";
+// import leftImg from "../assets/lefthome.png";
+// import rightImg from "../assets/righthome.png";
+// import paperIcon from "../assets/boat.png";
 import center from "../assets/center.png";
 import frame from "../assets/Influencer_Card.png";
 // import mobileCenter from "../assets/mobileCenter.png";
@@ -458,82 +457,6 @@ const Home = () => {
                             <Card key={i} data={t} />
                         ))}
                     </div>
-                </div>
-
-            </section>
-
-
-            {/*------------------------------ contact ----------------------------------*/}
-
-            <section className="contact">
-
-                {/* ===== TOP CONTACT PART ===== */}
-                <div className="contact__wrapper">
-
-                    {/* LEFT */}
-                    <div className="contact__left">
-                        <h2>We Would Love To <br />Hear From You</h2>
-
-                        <p>
-                            Ready to drop the busy work? Whether you are a creator looking to join the exclusive roster, or a brand looking to scale your local reach, drop us a line.
-                        </p>
-
-                        {/* simple paper icon */}
-                        <div className="paperIcon">
-                            <img src={paperIcon} alt="paper illustration" />
-                        </div>
-                    </div>
-
-                    {/* RIGHT FORM */}
-                    <form className="contact__form">
-
-                        <div className="form__row">
-                            <div className="inputGroup">
-                                <label>Name</label>
-                                <input type="text" required />
-                            </div>
-
-                            <div className="inputGroup">
-                                <label>Email</label>
-                                <input type="email" required />
-                            </div>
-                        </div>
-
-                        <div className="inputGroup">
-                            <label>How we can help you?</label>
-                            <input type="text" required />
-                        </div>
-
-                        <div className="inputGroup">
-                            <label>Message</label>
-                            <textarea rows="3" required></textarea>
-                        </div>
-
-                        <button className="submitBtn">
-                            SUBMIT ➔
-                        </button>
-
-                    </form>
-
-                </div>
-
-
-                {/* ===== BOTTOM CTA ===== */}
-                <div className="community">
-
-                    <div className="community__card image">
-                        <img src={leftImg} alt="" />
-                    </div>
-
-                    <div className="community__card center">
-                        <button className="newsletter">SUBSCRIBE TO NEWSLETTER</button>
-                        <h3>JOIN OUR INFLUENSO<br />COMMUNITY</h3>
-                    </div>
-
-                    <div className="community__card image">
-                        <img src={rightImg} alt="" />
-                    </div>
-
                 </div>
 
             </section>
