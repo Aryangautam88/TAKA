@@ -75,7 +75,7 @@ body {
 }
 
 .cta button {
-  background: #f5b400;
+  background: rgba(255, 217, 2, 1);
   border: none;
   padding: 10px 28px;
   border-radius: 30px;
