@@ -1,57 +1,112 @@
 import React from "react";
 import "./Footer.css";
-import handImg from "../assets/hand.png"; // bottom right image
-import bgImage from "../assets/footer-bg.png"; // background image (optional)
+import {
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaFacebookF,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
+import logo from "../assets/logo.png";
+import footer from "../assets/footer.png";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer"
+      style={{
+        backgroundImage: `url(${footer})`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundSize: "cover"
+      }}>
 
-      {/* Background Image Layer */}
-      <div
-        className="footer-bg"
-        style={{ backgroundImage: `url(${bgImage})` }}
-      ></div>
+      {/* TOP SECTION */}
+      <div className="footer__container">
 
-      <div className="footer-content">
-
-        {/* Left Section */}
-        <div className="footer-left">
-          <h2>
-            AVAILABLE FOR ALL <br /> SELECT PROJECTS
-          </h2>
-
-          <div className="footer-meta">
-            <span>© 2026, Influenso Influencer Marketing</span>
-            <span>India, lorem Ipsum</span>
+        {/* LOGO */}
+        <div className="footer__col">
+          <div className="footer__logo">
+            <img src={logo} alt="logo" />
           </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus.
+          </p>
         </div>
 
-        {/* Right Section */}
-        <div className="footer-right">
-          <div className="footer-menu">
-            <h4>MENU</h4>
-            <a href="#">Projects</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-          </div>
+        {/* NAVIGATION */}
+        <div className="footer__col">
+          <h4>Navigation</h4>
+          <ul>
+            <li>Home</li>
+            <li>Pages</li>
+            <li>About Us</li>
+            <li>Services</li>
+          </ul>
+        </div>
 
-          <div className="footer-socials">
-            <h4>SOCIALS</h4>
-            <a href="#">LinkedIn</a>
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-          </div>
+        {/* QUICK LINKS */}
+        <div className="footer__col">
+          <h4>Quick Link</h4>
+          <ul>
+            <li>Contact Us</li>
+            <li>FAQs</li>
+            <li>Booking</li>
+            <li>Pages</li>
+          </ul>
+        </div>
+
+        {/* SERVICES */}
+        <div className="footer__col">
+          <h4>Services</h4>
+          <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>Blog</li>
+          </ul>
         </div>
       </div>
 
-      {/* Big Background Text */}
-      <div className="footer-brand">
-        TAKA
+      {/* BOTTOM SECTION (ALIGNED WITH COLUMNS) */}
+      <div className="footer__bottom">
+        <div className="footer__bottom-content">
+
+          {/* Column 1 */}
+          <div className="footer__item">
+            <FaMapMarkerAlt />
+            <span>Indore, Madhya Pradesh</span>
+          </div>
+
+          {/* Column 2 */}
+          <div className="footer__item">
+            <FaPhoneAlt />
+            <span>(+876) 765 665</span>
+          </div>
+
+          {/* Column 3 */}
+          <div className="footer__item">
+            <FaEnvelope />
+            <span>mail@taka.id</span>
+          </div>
+
+          {/* Column 4 */}
+          <div className="footer__socials">
+            <FaFacebookF />
+            <FaTwitter />
+            <FaYoutube />
+          </div>
+
+        </div>
+
+        {/* DIVIDER */}
+        <div className="footer__divider"></div>
       </div>
 
-      {/* Bottom Right Image */}
-      <img src={handImg} alt="Decorative" className="footer-hand" />
+      {/* COPYRIGHT */}
+      <div className="footer__copyright">
+        © 2026 Taka - All Rights Reserved
+      </div>
 
     </footer>
   );
