@@ -18,16 +18,10 @@ html,body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: white;
+  background: rgba(245, 242, 234, 1);
   transition: 0.4s;
   z-index: 1000;
-}
-
-/* glass effect */
-.navbar.scrolled {
-  background: rgba(183, 182, 182, 0.6);
-  backdrop-filter: blur(12px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  font-family: Unbounded, "sans-serif";
 }
 
 /* LOGO */
@@ -44,32 +38,17 @@ html,body{
 }
 
 .nav-links a {
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none;
   /* font-weight: 600; */
-  color: #333;
+  color: rgba(32, 34, 49, 1);
   position: relative;
 }
 
 /* active underline */
 .nav-links a.active {
-  color: #f5b400;
-}
-
-.nav-links a::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background: #f5b400;
-  transition: 0.3s;
-}
-
-.nav-links a:hover::after,
-.nav-links a.active::after {
-  width: 100%;
+  color: rgba(32, 34, 49, 1);
+  font-weight: 500;
 }
 
 /* AUTH BUTTON */
@@ -77,7 +56,8 @@ html,body{
 .auth-toggle {
   display: flex;
   align-items: center;
-  background: #f5b400;
+  background: rgba(255, 217, 2, 1);
+
   /* dark green */
   border-radius: 999px;
   padding: 4px;
@@ -91,9 +71,11 @@ html,body{
   border: none;
   background: transparent;
   color: #fff;
+  font-size: 12px;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-family: Unbounded, "sans-serif";
 }
 
 /* ACTIVE (LEFT WHITE PILL EFFECT) */
@@ -134,6 +116,7 @@ html,body{
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
+  font-family: Unbounded, "sans-serif";
 }
 
 .hamburger span {
@@ -200,7 +183,7 @@ html,body{
     padding: 10px 20px;
     border-radius: 20px;
     border: none;
-    background: #f5b400;
+    background: rgba(255, 217, 2, 1);
     font-weight: bold;
   }
 }
