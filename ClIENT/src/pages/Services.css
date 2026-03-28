@@ -191,6 +191,7 @@ body {
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
+        display: none;
     }
 
     .circle {
@@ -209,6 +210,7 @@ body {
 
 /* GRID */
 .features__grid {
+    margin-left: 80px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 80px 60px;
@@ -223,7 +225,7 @@ body {
 .bgNumber {
     position: absolute;
     top: -70px;
-    left: -30px;
+    left: -70px;
     font-size: 120px;
     font-weight: 800;
 
@@ -283,16 +285,19 @@ body {
 @media (max-width: 600px) {
 
     .features {
-        padding: 90px 6% 0;
+        padding: 90px 4% 0;
     }
 
     .features__grid {
-        grid-template-columns: 1fr;
-        gap: 50px;
-    }
+    margin-left: 0;
+    padding: 0 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* pehle 3 fixed columns thi → ab flexible ho gaya */
+}
 
     .featureCard {
         padding-left: 10px;
+        max-width: 400px;
     }
 
     .bgNumber {
@@ -313,14 +318,17 @@ body {
 
 /*----------------------------------- video-section -------------------------*/
 .videoSection {
-    padding: 80px 01%;
+    padding: 80px 5%;
     background: #ffffff;
 }
 
 /* container */
 .videoContainer {
     width: 100%;
-    min-width: 1400px;
+    max-width: 1400px;
+    /* max width rakho instead of min-width */
+    margin: 0 auto;
+    /* center align */
     height: 520px;
     border-radius: 30px;
     overflow: hidden;
@@ -334,21 +342,48 @@ body {
     display: block;
 }
 
-/* ================= RESPONSIVE ================= */
-
-@media (max-width: 992px) {
+/* ================= LARGE SCREENS (1400px+) ================= */
+@media (min-width: 1400px) {
     .videoContainer {
-        height: 320px;
+        height: 600px;
     }
 }
 
+/* ================= LAPTOP ================= */
+@media (max-width: 1200px) {
+    .videoContainer {
+        height: 450px;
+    }
+}
+
+/* ================= TABLET ================= */
+@media (max-width: 992px) {
+    .videoSection {
+        padding: 70px 4%;
+    }
+
+    .videoContainer {
+        height: 320px;
+        border-radius: 24px;
+    }
+}
+
+/* ================= MOBILE ================= */
 @media (max-width: 600px) {
     .videoSection {
-        padding: 60px 4%;
+        padding: 50px 15px;
     }
 
     .videoContainer {
         height: 220px;
-        border-radius: 20px;
+        border-radius: 18px;
+    }
+}
+
+/* ================= SMALL MOBILE ================= */
+@media (max-width: 400px) {
+    .videoContainer {
+        height: 180px;
+        border-radius: 14px;
     }
 }

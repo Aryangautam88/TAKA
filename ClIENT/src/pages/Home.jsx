@@ -17,7 +17,7 @@ import client2 from "../assets/client2.png";
 // import paperIcon from "../assets/boat.png";
 import center from "../assets/center.png";
 import frame from "../assets/Influencer_Card.png";
-// import mobileCenter from "../assets/mobileCenter.png";
+import mobileCenter from "../assets/mobileCenter.png";
 
 const offersData = [
     { title: "Lorem Ipsum" },
@@ -164,7 +164,7 @@ const Home = () => {
                 {/* Upper Text */}
                 <div className="trusted-header">
                     <h1>
-                        Indore’s First Verified Creator Network<br />
+                        Indore’s First Verified Creator <br />
                         Influence. Commerce. Connected.
                     </h1>
                     <p>
@@ -175,7 +175,7 @@ const Home = () => {
                 {/* Image Container */}
                 <div className="trusted-image-wrapper">
                     <img src={center} alt="Showcase" className="desktop-img" />
-                    {/* <img src={mobileCenter} alt="Showcase Mobile" className="mobile-img" /> */}
+                    <img src={mobileCenter} alt="Showcase Mobile" className="mobile-img" />
                 </div>
 
             </section>
@@ -248,7 +248,7 @@ const Home = () => {
                                 onClick={() => setActive(i)}
                             >
                                 <span>FIND OUT MORE  ➔</span>
-                                
+
                             </button>
 
                         </div>
@@ -413,7 +413,7 @@ const Home = () => {
                         <h3 className="statCard__number">20+</h3>
                         <p className="statCard__label"> PREMIUM<br /> BRANDS</p>
                         <span className="statCard__small">
-                             Partnering with the city's top cafes, event organizers, and lifestyle brands.
+                            Partnering with the city's top cafes, event organizers, and lifestyle brands.
                         </span>
                     </div>
 
