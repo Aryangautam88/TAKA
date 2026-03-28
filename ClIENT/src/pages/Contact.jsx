@@ -1,6 +1,6 @@
 import React from "react";
 import "./Contact.css";
-import cafe from "../assets/cafe.png"; // apni image ka path yaha daal
+import cafe from "../assets/cafe.png"; 
 
 const Contact = () => {
   return (

@@ -95,7 +95,7 @@ const About = () => {
 
             <p className="founder__quote">
               “Hello people, this is the founder and I'd love to share my perspective.
-              For me TAKA is not just a service or a platform it's a solution, a stitch to the existing gap in the existing marketing campaigns at your comfort”
+              For me TAKA is not just a service or a platform it's a solution, a stitch to the existing gap in the existing marketing campaigns at your comfort.”
             </p>
 
             <h3 className="founder__name">
@@ -141,10 +141,7 @@ const About = () => {
 
               <span className="team__outline">TEAM OF</span>
 
-              <div className="team__heading">
-                <h3 className="team__subtitle">Meet The <br /> Crew</h3>
-                <h2 className="team__title">Experts</h2>
-              </div>
+              <h2 className="team__title">Experts</h2>
 
             </div>
 
