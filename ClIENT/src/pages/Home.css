@@ -61,7 +61,52 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-top: -70px;
+    margin-top: -40px;
+}
+
+/* =========================
+   YELLOW SEMI CIRCLE GLOW
+========================= */
+
+.trusted-image-wrapper::before {
+    content: "";
+    position: absolute;
+    bottom: -150px;
+
+    width: 700px;
+    height: 700px;
+
+    background: radial-gradient(circle at center bottom,
+            #fef08a 0%,
+            #fef08a 40%,
+            transparent 80%);
+    border-bottom-left-radius: 500px;
+    border-bottom-right-radius: 500px;
+
+    z-index: 0;
+}
+
+/* =========================
+   SEMI CIRCLE BORDER ARC
+========================= */
+
+.trusted-image-wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: -150px;
+
+    width: 680px;
+    height: 640px;
+
+    border: 3.5px solid rgba(0, 0, 0, 0.08);
+    /* border-top: none; */
+    border-radius: 500px;
+    /* border-top-left-radius:540px ;
+  border-top-right-radius:540px ;
+  border-bottom-left-radius: 540px;
+  border-bottom-right-radius: 540px; */
+
+    z-index: 0;
 }
 
 /* =========================
