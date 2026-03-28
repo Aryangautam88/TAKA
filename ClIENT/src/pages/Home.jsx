@@ -170,7 +170,7 @@ const Home = () => {
                     <p>
                         Bridging the gap between top-tier local creators and premium brands. No more cold DMs. No more fake engagement. Just seamless collaborations and measurable foot traffic.
                     </p>
-                </div>x
+                </div>
 
                 {/* Image Container */}
                 <div className="trusted-image-wrapper">

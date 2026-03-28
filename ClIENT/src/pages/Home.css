@@ -21,7 +21,7 @@ body {
 
 .trusted-section {
     padding: 120px 0 0 0;
-    background: linear-gradient(to bottom, #f9fafc, #ffffff);
+    background: rgba(245, 242, 234, 1);
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -64,50 +64,6 @@ body {
     margin-top: -40px;
 }
 
-/* =========================
-   YELLOW SEMI CIRCLE GLOW
-========================= */
-
-.trusted-image-wrapper::before {
-    content: "";
-    position: absolute;
-    bottom: -150px;
-
-    width: 700px;
-    height: 700px;
-
-    background: radial-gradient(circle at center bottom,
-            #fef08a 0%,
-            #fef08a 40%,
-            transparent 80%);
-    border-bottom-left-radius: 500px;
-    border-bottom-right-radius: 500px;
-
-    z-index: 0;
-}
-
-/* =========================
-   SEMI CIRCLE BORDER ARC
-========================= */
-
-.trusted-image-wrapper::after {
-    content: "";
-    position: absolute;
-    bottom: -150px;
-
-    width: 680px;
-    height: 640px;
-
-    border: 3.5px solid rgba(0, 0, 0, 0.08);
-    /* border-top: none; */
-    border-radius: 500px;
-    /* border-top-left-radius:540px ;
-  border-top-right-radius:540px ;
-  border-bottom-left-radius: 540px;
-  border-bottom-right-radius: 540px; */
-
-    z-index: 0;
-}
 
 /* =========================
    MAIN IMAGE
@@ -137,15 +93,6 @@ body {
         margin-bottom: 60px;
     }
 
-    .trusted-image-wrapper::before {
-        width: 90%;
-        height: 400px;
-    }
-
-    .trusted-image-wrapper::after {
-        width: 95%;
-        height: 420px;
-    }
 }
 
 @media (max-width: 600px) {
@@ -178,7 +125,7 @@ body {
     /* padding: 80px 6%; */
     background: #ffffff;
     padding-bottom: 10px;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 /* -----phone image ----------*/
@@ -407,12 +354,12 @@ body {
     }
 
     .tools__bgNumber {
-        background: linear-gradient(to bottom, rgb(146, 146, 244), #fcf7f7);
+        background: linear-gradient(179.69deg, #95a0f1 0.27%, #FFFFFF 72.39%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 160px;
-        top: -130px;
+        top: -110px;
         left: -10px;
         opacity: .5;
         letter-spacing: -10px;
@@ -666,7 +613,8 @@ body {
     justify-content: space-between;
     margin-bottom: 50px;
     gap: 30px;
-    padding: 80px 50px 0px;
+    padding: 60px 6% 0px;
+
 }
 
 .smallTitle {
@@ -1255,7 +1203,7 @@ body {
 /* ================= CLIENTS SECTION ================= */
 
 .clients {
-    padding: 40px 1% ;
+    padding: 1fclients__header0px 1% ;
 }
 
 /* ===== HEADER ===== */
@@ -1265,7 +1213,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 60px;
+    margin-top: 60px;
     gap: 40px;
 }
 
@@ -1278,7 +1226,7 @@ body {
 
 .clients__title span {
     font-weight: 500;
-    font-size: 40px;
+    font-size:38px;
 }
 
 .clients__desc {
@@ -1448,12 +1396,18 @@ body {
 @media (max-width:600px) {
 
     .clients {
-        padding: 60px 20px;
+        padding: 10px 0px;
+        margin-top:-90px ;
     }
 
     .clients__title {
         font-size: 28px;
         line-height: 36px;
+    }
+    .clients__slider{
+        margin-top: -30px !important;
+        margin: 0px;
+        margin-bottom: -230px;
     }
 
     .clients__title span {
@@ -1504,6 +1458,7 @@ body {
     justify-content: space-between;
     margin-bottom: 50px;
     gap: 30px;
+    padding: 0px 6%;
 }
 
 .title {
