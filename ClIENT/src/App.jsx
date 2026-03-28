@@ -8,6 +8,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
+
+import ScrollToTop from "./ScrollToTop";
 // import Career from "./pages/Career";
 // import SignupInfluencer from "./pages/SignupInfluencer";
 // import SignupBusiness from "./pages/SignupBusiness";
@@ -15,6 +17,7 @@ import Contact from "./pages/Contact";
 function App() {
   return (
     <Router>
+      <ScrollToTop/>
       <Navbar />
 
       <div className="app">
