@@ -20,18 +20,18 @@ import frame from "../assets/Influencer_Card.png";
 import mobileCenter from "../assets/mobileCenter.png";
 
 const offersData = [
-    { title: "Lorem Ipsum" },
-    { title: "Lorem Ipsum" },
-    { title: "Lorem Ipsum" },
-    { title: "Lorem Ipsum" },
-    { title: "Lorem Ipsum" },
-    { title: "Lorem Ipsum" },
+    { title: "Inbound Collabs" },
+    { title: "The Escrow Vault" },
+    { title: "Zero Admin Work" },
+    { title: "Verified Local Reach" },
+    { title: "Risk-Free Execution" },
+    { title: "Effortless Matchmaking" },
 ];
 const servicesData = [
     {
         id: "001",
-        title: "Lorem Ipsum Lorem Ipsum",
-        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        title: "Verified Creator Matchmaking",
+        desc: "We hand-pick local talent whose audience aligns perfectly with your target market, eliminating the guesswork from influencer marketing.",
         img: s1,
     },
     {
@@ -164,11 +164,13 @@ const Home = () => {
                 {/* Upper Text */}
                 <div className="trusted-header">
                     <h1>
-                        Indore’s First Verified Creator <br />
+                        The First Verified Creator Network <br />
                         Influence. Commerce. Connected.
                     </h1>
                     <p>
-                        Bridging the gap between top-tier local creators and premium brands. No more cold DMs. No more fake engagement. Just seamless collaborations and measurable foot traffic.
+                        Where top creators meet premium brands.
+                        No noise. No fake engagement.
+                        Only seamless, impactful collaborations.
                     </p>
                 </div>
 
@@ -199,7 +201,10 @@ const Home = () => {
                         </h2>
 
                         <p className="tools__desc">
-                            TAKA is an exclusive, data-driven platform built for Indore's creator economy. We realized the old way of local marketing is broken—creators hate sending cold DMs, and brands are tired of paying for empty metrics. We built TAKA to solve both, creating a seamless pipeline between authentic storytelling and real commerce.
+                            TAKA is an exclusive, data-driven platform built for Indore's creator economy.
+                            We realized the old way of local marketing is broken—creators hate sending cold DMs,
+                            and brands are tired of paying for empty metrics. We built TAKA to solve both,
+                            creating a seamless pipeline between authentic storytelling and real commerce.
                         </p>
 
                         <button className="tools__btn">
@@ -270,8 +275,8 @@ const Home = () => {
                     </div>
 
                     <p className="services__desc">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                        We replace traditional, high-friction marketing with a seamless,
+                        verified creator network designed to drive actual foot traffic and measurable ROI.
                     </p>
                 </div>
 
@@ -358,7 +363,7 @@ const Home = () => {
             <div className="clients">
                 <div className="clients__header">
                     <h2 className="clients__title">
-                        INFLUENSO <br /> ORIGINALS <span>  OUR CLIENTS</span>
+                        TAKA <br /> ORIGINALS <span className="clients__highlight">OUR CLIENTS</span>
                     </h2>
 
                     <p className="clients__desc">
