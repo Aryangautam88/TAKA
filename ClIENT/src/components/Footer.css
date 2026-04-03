@@ -1,7 +1,7 @@
 /*----------------------------------- contact------------------------------------ */
 
 .contact {
-  padding: 90px 8%;
+  padding: 90px 6%;
   background: #FFFFFF;
   font-family: "Inter", sans-serif;
 }
@@ -21,7 +21,7 @@
 
 .contact__left h2 {
   font-family: "Unbounded", sans-serif;
-  font-size: 52px;
+  font-size: 48px;
   font-weight: 900;
   color: #1f232b;
   line-height: 1.2;
