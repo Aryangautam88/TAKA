@@ -165,7 +165,7 @@ const About = () => {
                   <img src={about_hero1} alt="team" />
                 </div>
 
-                <h4>David Cooper <span>/ App Developer</span></h4>
+                <h4>Kritika Singh <span>/ App Developer</span></h4>
 
               </div>
 
@@ -182,7 +182,7 @@ const About = () => {
                   <img src={about_hero1} alt="team" />
                 </div>
 
-                <h4>David Cooper <span>/ App Developer</span></h4>
+                <h4>Aryan Gautam <span>/ App Developer</span></h4>
 
               </div>
 
@@ -199,7 +199,7 @@ const About = () => {
                   <img src={about_hero1} alt="team" />
                 </div>
 
-                <h4>David Cooper <span>/ App Developer</span></h4>
+                <h4>Shreyansh Tiwari <span>/ App Developer</span></h4>
 
               </div>
 

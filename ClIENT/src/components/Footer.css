@@ -29,7 +29,7 @@
 }
 
 .contact__left p {
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Plus Jakarta Sans", sans-serif;
   color: #6b7280;
   max-width: 360px;
@@ -188,7 +188,7 @@
   }
 
   .contact__left h2 {
-      font-size: 32px;
+      font-size: 28px;
   }
 
   .paperIcon {
@@ -203,7 +203,7 @@
       width: 130px;
       margin: 20px auto 0;
   }
-
+  
 }
 
 

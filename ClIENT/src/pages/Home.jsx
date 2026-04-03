@@ -382,7 +382,12 @@ const Home = () => {
                             <div className="clientCard" key={i}>
 
                                 <div className="clientFrame">
-                                    <img src={frame} className="frameBg" alt="" />
+                                    <img
+                                        src={frame}
+                                        className="frameBg"
+                                        alt=""
+                                        style={{ width: "300px" }}
+                                    />
                                     <img src={img} className="clientImg" alt="client" />
                                 </div>
 
