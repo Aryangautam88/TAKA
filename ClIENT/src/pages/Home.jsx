@@ -363,7 +363,7 @@ const Home = () => {
             <div className="clients">
                 <div className="clients__header">
                     <h2 className="clients__title">
-                        TAKA <br /> ORIGINALS <span className="clients__highlight">OUR CLIENTS</span>
+                    OUR <br /> CLIENTS <span className="clients__highlight"></span>
                     </h2>
 
                     <p className="clients__desc">

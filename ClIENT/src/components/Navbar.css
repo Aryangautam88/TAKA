@@ -139,6 +139,7 @@ html,body{
   transform: rotate(-45deg) translateY(-8px);
 }
 
+
 /* MOBILE */
 .mobile-auth {
 
@@ -185,6 +186,12 @@ html,body{
 
   .mobile-auth .auth-toggle button {
   padding: 0; /* important */
+}
+.nav-links a{
+  color: #000000;
+}
+.nav-links a.active{
+  color: #000;
 }
 }
 
