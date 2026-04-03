@@ -426,346 +426,232 @@
   
   
   
-  /* ================= TEAM SECTION ================= */
-  
-  .team {
-    background: #f5f5f5;
-    padding: 60px 8%;
-    font-family: "Poppins", sans-serif;
-  }
-  
-  .team__container {
-    max-width: 1400px;
-    margin: auto;
-  }
-  
-  /* HEADER */
-  
+/* ================= TEAM SECTION ================= */
+
+.team {
+  background: #ffffff;
+  padding: 60px 8%;
+  font-family: "Poppins", sans-serif;
+}
+
+.team__container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* ================= HEADER ================= */
+
+.team__header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+/* LEFT */
+
+.team__left {
+  max-width: 550px;
+}
+
+.team__diamond {
+  width: 180px;
+  opacity: 0.25;
+  margin-bottom: 20px;
+}
+
+.team__desc {
+  font-size: 16px;
+  color: #6b6b6b;
+  line-height: 1.6;
+}
+
+/* RIGHT (TEAM OF EXPERTS) */
+
+.team__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;  
+  margin-top: -20px;
+}
+
+/* TEAM OF (outline) */
+
+.team__outline {
+  font-size: 90px;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 1.5px #1e1e2f;
+  line-height: 1;
+}
+
+/* EXPERTS */
+
+.team__title {
+  font-family: Unbounded, "sans-serif";
+  font-size: 90px;
+  font-weight: 700;
+  color: #9e9e9e;
+  line-height: 1;
+}
+
+/* ================= TEAM LIST ================= */
+
+.team__list {
+  border: 1px solid #cfcfcf;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.team__member {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 30px;
+  border-bottom: 1px solid #cfcfcf;
+  transition: 0.3s;
+}
+
+.team__member:last-child {
+  border-bottom: none;
+}
+
+.team__info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.team__info h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.team__info span {
+  font-size: 14px;
+  color: #777;
+  margin-left: 6px;
+}
+
+/* Avatar */
+
+.team__avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  transform: scale(0);
+  transition: 0.3s;
+}
+
+.team__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hover */
+
+.team__member:hover {
+  background: #fafafa;
+  padding-left: 40px;
+}
+
+.team__member:hover .team__avatar {
+  transform: scale(1);
+}
+
+/* Link */
+
+.team__link {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* TABLET */
+
+@media (max-width: 992px) {
   .team__header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    margin-bottom: 70px;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    text-align: center;
   }
-  
-  /* LEFT SIDE */
-  
-  .team__left {
-    max-width: 550px;
-  }
-  
-  .team__diamond {
-    width: 180px;
-    opacity: .25;
-    margin-bottom: 20px;
-  }
-  
-  .team__desc {
-    font-size: 16px;
-    color: #6b6b6b;
-    line-height: 1.6;
-  }
-  
-  /* RIGHT SIDE */
-  
+
   .team__right {
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 80px;
+    align-items: center;
+    text-align: center;
   }
-  
-  /* Outline text */
-  
-  .team__outline {
-    position: absolute;
-    top: -120px;
-    right: 0;
-    font-size: 88px;
-    font-weight: 700;
-    color: transparent;
-    -webkit-text-stroke: 1.2px rgba(32, 34, 49, 1);
-    opacity: .6;
-    pointer-events: none;
-  }
-  
-  /* Row containing subtitle + title */
-  
-  .team__heading {
-    display: flex;
-    align-items: flex-end;
-    gap: 20px;
-    position: relative;
-    z-index: 2;
-    font-family: "Unbounded", sans-serif;
-  }
-  
-  /* Meet The Crew */
-  
-  .team__subtitle {
-    font-size: 32px;
-    font-weight: 600;
-  }
-  
-  /* Experts */
-  
+
+  .team__outline,
   .team__title {
-    font-size: 78px;
-    font-weight: 700;
-    color: #a6a6a6;
+    font-size: 70px;
   }
-  
-  /* ================= TEAM LIST ================= */
-  
-  .team__list {
-    border: 1px solid #cfcfcf;
-    border-radius: 25px;
-    overflow: hidden;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .team {
+    padding: 50px 6%;
   }
-  
-  /* MEMBER ROW */
-  
+
+  .team__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team__left {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .team__diamond {
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  .team__right {
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .team__outline,
+  .team__title {
+    font-size: 42px;
+  }
+
+  .team__avatar {
+    transform: scale(1);
+  }
+
   .team__member {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 26px 30px;
-    border-bottom: 1px solid #cfcfcf;
-    transition: all .35s ease;
+    padding-left: 20px;
   }
-  
-  .team__member:last-child {
-    border-bottom: none;
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 480px) {
+  .team__outline,
+  .team__title {
+    font-size: 42px;
   }
-  
-  /* INFO SECTION */
-  
-  .team__info {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+
+  .team__member {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
   }
-  
-  .team__info h4 {
-    font-size: 18px;
-    font-weight: 600;
-  }
-  
-  .team__info span {
-    font-size: 14px;
-    color: #777;
-    margin-left: 6px;
-  }
-  
-  /* HIDDEN IMAGE */
-  
-  .team__avatar{
-    width:60px;
-    height:60px;
-    border-radius:50%;
-    overflow:hidden;
-    transform:scale(0);
-    transition:transform .35s ease;
-    flex-shrink:0;
-    }
-    
-    .team__avatar img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    border-radius:50%;
-    }
-    
-    /* hover */
-    
-    .team__member:hover .team__avatar{
-    transform:scale(1);
-    }
-  
-  
-  /* HOVER EFFECT */
-  
-  .team__member:hover {
-    background: #fafafa;
-    padding-left: 40px;
-  }
-  
-  .team__member:hover .team__avatar {
-    width: 60px;
-    height: 60px;
-  }
-  
-  /* LINK */
-  
+
   .team__link {
-    font-size: 14px;
-    cursor: pointer;
+    align-self: flex-end;
   }
-  
-  
-  /* ================= LAPTOP ================= */
-  
-  @media (max-width:1200px) {
-  
-    .team__outline {
-      font-size: 70px;
-      top: -90px;
-    }
-  
-    .team__title {
-      font-size: 60px;
-    }
-  
-    .team__subtitle {
-      font-size: 26px;
-    }
-  
-    .team__header {
-      gap: 40px;
-    }
-  
-  }
-  
-  
-  
-  /* ================= TABLET ================= */
-  
-  @media (max-width:992px) {
-  
-    .team {
-      padding: 60px 6%;
-    }
-  
-    .team__header {
-      grid-template-columns: 1fr;
-      gap: 50px;
-    }
-  
-    .team__right {
-      justify-content: center;
-      text-align: center;
-      margin-top: 40px;
-    }
-  
-    .team__outline {
-      right: auto;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 60px;
-      top: -70px;
-    }
-  
-    .team__heading {
-      justify-content: center;
-    }
-  
-    .team__title {
-      font-size: 56px;
-    }
-  
-    .team__subtitle {
-      font-size: 24px;
-    }
-  
-  }
-  
-  
-  
-  /* ================= MOBILE ================= */
-  
-  @media (max-width:768px){
-  
-    .team__right{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    text-align:center;
-    }
-    
-    /* TEAM OF */
-    .team__outline{
-    position:static;
-    font-size:38px;
-    -webkit-text-stroke:1px #bdbdbd;
-    color:transparent;
-    margin-bottom:0;
-    line-height:1;
-    }
-    
-    /* Experts */
-    .team__title{
-    font-size:42px;
-    margin:5px 0;
-    line-height:1.1;
-    }
-    
-    /* Meet the Crew */
-    .team__subtitle{
-    font-size:20px;
-    margin-top:5px;
-    }
-    
-    /* force perfect stacking */
-    .team__heading{
-    flex-direction:column;
-    align-items:center;
-    gap:0;
-    }
-  
-    .team__avatar{
-      transform:scale(1);
-      }
-      
-      .team__member{
-      padding-left:20px !important;
-      }
-    
-    }
-  
-  
-  /* ================= SMALL MOBILE ================= */
-  
-  @media (max-width:480px) {
-  
-    .team {
-      padding: 50px 5%;
-    }
-  
-    .team__heading {
-      flex-direction: column;
-      align-items: center;
-      gap: 8px;
-    }
-  
-    .team__title {
-      font-size: 34px;
-    }
-  
-    .team__subtitle {
-      font-size: 18px;
-    }
-  
-    .team__outline {
-      font-size: 36px;
-      top: -45px;
-    }
-  
-    .team__member {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 12px;
-    }
-  
-    .team__link {
-      align-self: flex-end;
-    }
-  
-    .team__avatar img {
-      width: 50px;
-      height: 50px;
-    }
-  
-  }
+}
   
   
   
