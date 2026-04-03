@@ -16,13 +16,16 @@ const About = () => {
           <div className="about__content">
 
             <h1 className="about__title">
-              Lorem Ipsum Is <br /> Simply Dummy
+              Driven by purpose <br /> built for real impact
             </h1>
 
             <p className="about__description">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s,
+              TAKA is on a mission to redefine how brands connect with audiences across India.
+              We eliminate fake reach, vanity metrics, and guesswork - focusing only on real,
+              verified creators who bring actual customers to your business.
+
+              Whether you're a growing brand or an established business, TAKA ensures your
+              marketing delivers measurable impact, not just numbers on a screen.
             </p>
 
             <button className="about__cta">
@@ -45,7 +48,7 @@ const About = () => {
               <span className="about__stat">85%</span>
 
               <p className="about__stat-text">
-                Lorem Ipsum is simply dummy text of the printing
+                Verified local creators currently on our exclusive roster.
               </p>
             </div>
 
@@ -60,7 +63,7 @@ const About = () => {
               <span className="about__stat">85%</span>
 
               <p className="about__stat-text">
-                Lorem Ipsum is simply dummy text of the printing
+                Seamless matchmaking between brands and influencers.
               </p>
             </div>
 
@@ -94,8 +97,9 @@ const About = () => {
             </h2>
 
             <p className="founder__quote">
-              “Hello people, this is the founder and I'd love to share my perspective.
-              For me TAKA is not just a service or a platform it's a solution, a stitch to the existing gap in the existing marketing campaigns at your comfort.”
+              “To me, TAKA is more than just a service or a platform—it’s a direct solution to a very real problem. 
+              We recognized the exhausting friction in traditional influencer marketing and built TAKA to seamlessly
+               bridge the gap between premium brands and verified creators.”
             </p>
 
             <h3 className="founder__name">
@@ -246,12 +250,11 @@ const About = () => {
           <div className="about_cta__content">
 
             <h2 className="about_cta__title">
-              Lorem Ipsum Is <span>Simply</span>
+            Join the exclusive Network
             </h2>
 
             <p className="about_cta__desc">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            Stop paying for empty vanity metrics. Partner with local creators who actually bring customers through your doors.
             </p>
 
             <div className="about_cta__input">
@@ -286,10 +289,10 @@ const About = () => {
           <div className="about_features__card">
             <span className="about_features__number">01</span>
 
-            <h3>Lorem Ipsum</h3>
+            <h3>Plan the Campaign</h3>
 
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Brands lock in their campaign budgets and aesthetic requirements with us.
             </p>
 
             <a href="#">FIND OUT MORE ↗</a>
@@ -300,10 +303,10 @@ const About = () => {
           <div className="about_features__card">
             <span className="about_features__number">02</span>
 
-            <h3>Lorem Ipsum</h3>
+            <h3>Verified Creator Match</h3>
 
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            We hand-pick and assign the ideal, verified creator from our exclusive network.
             </p>
 
             <a href="#">FIND OUT MORE ↗</a>
@@ -314,10 +317,10 @@ const About = () => {
           <div className="about_features__card">
             <span className="about_features__number">03</span>
 
-            <h3>Lorem Ipsum</h3>
+            <h3>Drive Real Engagement</h3>
 
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Creators visit, capture authentic content, and drive measurable local engagement.
             </p>
 
             <a href="#">FIND OUT MORE ↗</a>

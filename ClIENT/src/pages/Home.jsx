@@ -36,20 +36,20 @@ const servicesData = [
     },
     {
         id: "002",
-        title: "Lorem Ipsum Lorem Ipsum",
-        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        title: "Premium Collabs",
+        desc: "No more cold dms or spamming managers. We get you direct access to premium paid and barter collabs.",
         img: s2,
     },
     {
         id: "003",
-        title: "Lorem Ipsum Lorem Ipsum",
-        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        title: "Real Foot Traffic",
+        desc: "We drive actual, measurable customers to your stores through our perfect campaigns.",
         img: s3,
     },
     {
         id: "004",
-        title: "Lorem Ipsum Lorem Ipsum",
-        desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        title: "100% Free Roster",
+        desc: "We don't charge you to join, it's 100% free to join as an influencer, no investment just return.",
         img: s4,
     },
 ];
