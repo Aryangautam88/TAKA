@@ -90,9 +90,10 @@ body {
 
 .trusted-header p {
     font-size: 18px;
-    font-family: "Montserrat", sans-serif;
+    font-family: Poppins, "sans-serif";
     color: rgba(32, 34, 49, 1);
     max-width: 650px;
+    font-weight: 500;
     margin: 0 auto 80px auto;
 }
 
@@ -1396,7 +1397,7 @@ body {
 
 .frameBg {
     width: 100%;
-    height: 100%;
+    height: 80%;
     display: block;
 }
 
@@ -1520,8 +1521,7 @@ body {
     }
 
     .frameBg {
-        width: 200px;
-        border-radius:16px;
+        border-radius: 16px;
     }
 
     .clientImg {
@@ -1529,7 +1529,10 @@ body {
         top: 60px;
     }
 
-
+    .badge {
+        width: 40px;
+        height: 40px;
+    }
 
     .badge img {
         width: 18px;

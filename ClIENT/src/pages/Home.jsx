@@ -17,7 +17,7 @@ import client2 from "../assets/client2.png";
 // import paperIcon from "../assets/boat.png";
 import center from "../assets/center.png";
 import frame from "../assets/Influencer_Card.png";
-import mobileCenter from "../assets/mobileCenter.png";
+import mobileCenter from "../assets/HomeMobile.png";
 
 const offersData = [
     { title: "Inbound Collabs" },
@@ -361,42 +361,50 @@ const Home = () => {
 
 
             <div className="clients">
-                <div className="clients__header">
-                    <h2 className="clients__title">
-                    OUR <br /> CLIENTS <span className="clients__highlight"></span>
-                    </h2>
+    
+    <div className="clients__header">
+        <h2 className="clients__title">
+            OUR <br /> CLIENTS <span className="clients__highlight"></span>
+        </h2>
 
-                    <p className="clients__desc">
-                        We collaborate with influencers and businesses worldwide,
-                        creating successful brand partnerships and campaigns
-                        creating successful brand partnerships and campaigns.
-                    </p>
-                </div>
+        <p className="clients__desc">
+            We collaborate with influencers and businesses worldwide,
+            creating successful brand partnerships and campaigns
+            creating successful brand partnerships and campaigns.
+        </p>
+    </div>
 
-                {/* const clients = [client1, client2, client1, client2]; */}
+    <div className="clients__slider">
+        <div className="clients__track">
 
-                <div className="clients__slider">
+            {[...clients, ...clients].map((img, i) => (
+                <div className="clientCard" key={i}>
 
-                    <div className="clients__track">
-                        {[...clients, ...clients].map((img, i) => (
-                            <div className="clientCard" key={i}>
+                    <div className="clientFrame">
 
-                                <div className="clientFrame">
-                                    <img
-                                        src={frame}
-                                        className="frameBg"
-                                        alt=""
-                                        style={{ width: "300px" }}
-                                    />
-                                    <img src={img} className="clientImg" alt="client" />
-                                </div>
+                        {/* frame */}
+                        <img
+                            src={frame}
+                            className="frameBg"
+                            alt="frame"
+                        />
 
-                            </div>
-                        ))}
+                        {/* client image */}
+                        <img
+                            src={img}
+                            className="clientImg"
+                            alt="client"
+                        />
+
                     </div>
 
                 </div>
-            </div>
+            ))}
+
+        </div>
+    </div>
+
+</div>
 
 
             {/*---------------------------------STATS-------------------------------*/}
