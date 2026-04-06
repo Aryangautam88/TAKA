@@ -93,7 +93,7 @@
 
 @media (max-width: 600px) {
   .identityTitle {
-    font-size: 34px;
+    font-size: 54px;
     letter-spacing: 2px;
     font-weight: 900;
     margin-top: 40px !important;
@@ -110,6 +110,7 @@
     margin-top: -20px;
   }
   .identityImageBox img{
+    max-height: 430px !important;
     margin-top: -40px;
   }
   .identitySection{
@@ -449,6 +450,7 @@
 .team__link {
   font-size: 14px;
   cursor: pointer;
+
 }
 
 /* ================= RESPONSIVE ================= */
@@ -537,6 +539,7 @@
 
   .team__link {
     align-self: flex-end;
+     display: none;
   }
 }
 
@@ -564,7 +567,7 @@
 /* ================= ABOUT CTA SECTION ================= */
 
 .about_cta {
-  background: rgba(32, 34, 49, 1);
+  background: linear-gradient(135deg, #0f172a, #1e293b);
   padding: 0px 8%;
   color: white;
   font-family: "Poppins", sans-serif;
@@ -639,7 +642,7 @@
 }
 
 .about_cta__image img {
-  width: 420px;
+  width: 400px;
   opacity: .2;
 }
 
@@ -740,7 +743,7 @@
   }
 
   .about_cta__image img {
-    width: 160px;
+    width: 250px;
   }
 
 }

@@ -28,7 +28,7 @@ body {
 
 /* 🔥 TEXT IMAGE EFFECT */
 .career-title {
-    font-size: 140px;
+    font-size: 130px;
     font-weight: 900;
     word-spacing: 40px;
     text-transform: uppercase;
@@ -94,7 +94,7 @@ body {
 /* Mobile */
 @media (max-width: 480px) {
     .career-title {
-        font-size: 14vw;
+        font-size: 15vw;
         line-height: 60px;
         word-spacing: 10px;
     }
@@ -178,18 +178,23 @@ body {
 
 /* 🔥 TITLE */
 .card-job-category {
-    font-size: clamp(16px, 2vw, 20px);
-    font-weight: 400;
+    font-size: 21px;
+    font-weight: 600;
     margin-top: 10px;
 }
 
 /* 🔥 DESC */
 .card-job-desc {
-    font-size: 15px;
+    font-size: 14px;
     color: #000;
     margin: 15px 0;
     font-family: "Poppins", sans-serif;
-    line-height: 1.7;
+    line-height: 25px;
+}
+.card-job-title{
+    font-weight: 400;
+    font-size: 16px;
+    display: none;
 }
 
 /* 🔥 META */
@@ -234,33 +239,14 @@ body {
     white-space: nowrap;
 }
 
-/* 🔥 ARROW */
-.card-arrow {
-    position: absolute;
-    top: -25px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: clamp(45px, 6vw, 65px);
-    height: clamp(45px, 6vw, 65px);
-    background: #f3f3f3;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.card-arrow::after {
-    content: "↗";
-    font-size: clamp(16px, 2vw, 22px);
-    font-weight: bold;
-    color: #1f2230;
-}
+
 
 /* 🔥 TEXT */
 .card-apply-text {
     position: relative;
     color: #fff;
-    font-size: clamp(18px, 3vw, 30px);
+    font-size:30px;
     font-weight: 800;
     /* margin-top: -10px; */
 }
@@ -283,7 +269,7 @@ body {
     }
 
     .card-career {
-        padding: 30px 15px;
+        padding: 10px 6% 40px;
     }
 
     .card-job-top {
@@ -295,8 +281,9 @@ body {
 @media (max-width: 400px) {
     .card-hiring-title {
         margin-top: -20px;
-        font-size: 30px;
+        font-size: 37px;
         line-height: 1.2;
+        font-family: Poppins,"sans-serif";
     }
 
     .card-job-meta {
@@ -393,6 +380,7 @@ body {
     }
 
     .hero__desc-L {
+        font-size: 14px;
         margin: 20px auto;
     }
 

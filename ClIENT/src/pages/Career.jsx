@@ -63,7 +63,7 @@ const Career = () => {
             <div className="card-career">
 
                 {/* 🔥 HEADING */}
-                <h1 className="card-hiring-title">WE ARE HIRING !</h1>
+                <h1 className="card-hiring-title">WE ARE HIRING </h1>
 
                 {/* 🔥 CARDS */}
                 <div className="card-jobs-container">
