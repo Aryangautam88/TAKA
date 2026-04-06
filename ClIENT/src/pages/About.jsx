@@ -1,76 +1,42 @@
 import React from "react";
 import "./About.css";
 import about_hero1 from "../assets/about_hero1.png";
-import about_hero2 from "../assets/about_hero2.png";
+// import about_hero2 from "../assets/about_hero2.png";
 import diamond1 from "../assets/diamond1.png";
 import about3 from "../assets/about3.png";
 import about_cta from "../assets/about_cta.png";
-import abhishek from "../assets/abhishek.jpeg";
+import textBg from "../assets/service-bg.png";   // 👈 text ke liye image
+import desktopImg from "../assets/About-bg.png";
+import mobileImg from "../assets/service-phone.png";
 
 const About = () => {
   return (
     <>
-      <section className="about">
-        <div className="about__container">
+      <section className="identitySection">
 
-          {/* LEFT CONTENT */}
-          <div className="about__content">
+        {/* Heading */}
+        <h1
+          className="identityTitle"
+          style={{ backgroundImage: `url(${textBg})` }}
+        >
+          OUR IDENTITY
+        </h1>
 
-            <h1 className="about__title">
-              Driven by purpose <br /> built for real impact
-            </h1>
-
-            <p className="about__description">
-              TAKA is on a mission to redefine how brands connect with audiences across India.
-              We eliminate fake reach, vanity metrics, and guesswork - focusing only on real,
-              verified creators who bring actual customers to your business.
-
-              Whether you're a growing brand or an established business, TAKA ensures your
-              marketing delivers measurable impact, not just numbers on a screen.
-            </p>
-
-            <button className="about__cta">
-              LET’S <br /> START
-            </button>
-
-          </div>
-
-
-          {/* RIGHT IMAGES */}
-          <div className="about__gallery">
-
-            <div className="about__card about__card--left">
-              <img
-                src={about_hero1}
-                alt="Creative team"
-                className="about__image"
-              />
-
-              <span className="about__stat">85%</span>
-
-              <p className="about__stat-text">
-                Verified local creators currently on our exclusive roster.
-              </p>
-            </div>
-
-
-            <div className="about__card about__card--right">
-              <img
-                src={about_hero2}
-                alt="Creative workspace"
-                className="about__image"
-              />
-
-              <span className="about__stat">85%</span>
-
-              <p className="about__stat-text">
-                Seamless matchmaking between brands and influencers.
-              </p>
-            </div>
-
-          </div>
-
+        {/* Tabs */}
+        <div className="identityTabs">
+          <span>About Us</span>
+          <span className="active">Who We Are</span>
+          <span>Our Story</span>
         </div>
+
+        {/* Image Card (Responsive) */}
+        <div className="identityImageBox">
+          <picture>
+            <source media="(max-width: 600px)" srcSet={mobileImg} />
+            <img src={desktopImg} alt="team" />
+          </picture>
+        </div>
+
       </section>
 
       {/* ================= FOUNDER SECTION ================= */}
@@ -100,7 +66,7 @@ const About = () => {
             <p className="founder__quote">
               “To me, TAKA is more than just a service or a platform - it’s a direct solution to a very real problem. 
               We recognized the exhausting friction in traditional influencer marketing and built TAKA to seamlessly
-               bridge the gap between premium brands and verified creators.”
+              bridge the gap between premium brands and verified creators.”
             </p>
 
             <h3 className="founder__name">
@@ -116,10 +82,6 @@ const About = () => {
         </div>
 
       </section>
-
-
-
-
 
       {/* ================= TEAM SECTION ================= */}
 
@@ -166,24 +128,7 @@ const About = () => {
                   <img src={about_hero1} alt="team" />
                 </div>
 
-                <h4>Kritika Singh <span>/ Full Stack Developer</span></h4>
-
-              </div>
-
-              <p className="team__link">About Her ↗</p>
-
-            </div>
-
-
-            <div className="team__member">
-
-              <div className="team__info">
-
-                <div className="team__avatar">
-                  <img src={about_hero1} alt="team" />
-                </div>
-
-                <h4>Aryan Gautam <span>/ Full Stack Developer</span></h4>
+                <h4>Aryan Gautam <span>/ App Developer</span></h4>
 
               </div>
 
@@ -200,7 +145,41 @@ const About = () => {
                   <img src={about_hero1} alt="team" />
                 </div>
 
-                <h4>Shreyansh Tiwari <span>/ Content Writer</span></h4>
+                <h4> Kritika Singh <span>/ App Developer</span></h4>
+
+              </div>
+
+              <p className="team__link">About Him ↗</p>
+
+            </div>
+
+
+            <div className="team__member">
+
+              <div className="team__info">
+
+                <div className="team__avatar">
+                  <img src={about_hero1} alt="team" />
+                </div>
+
+                <h4>Shreyansh Tiwari <span>/ App Developer</span></h4>
+
+              </div>
+
+              <p className="team__link">About Him ↗</p>
+
+            </div>
+
+
+            <div className="team__member">
+
+              <div className="team__info">
+
+                <div className="team__avatar">
+                  <img src={about_hero1} alt="team" />
+                </div>
+
+                <h4>David Cooper <span>/ App Developer</span></h4>
 
               </div>
 
@@ -234,11 +213,11 @@ const About = () => {
           <div className="about_cta__content">
 
             <h2 className="about_cta__title">
-            Join the exclusive Network
+              Join the exclusive Network
             </h2>
 
             <p className="about_cta__desc">
-            Stop paying for empty vanity metrics. Partner with local creators who actually bring customers through your doors.
+              Stop paying for empty vanity metrics. Partner with local creators who actually bring customers through your doors.
             </p>
 
           </div>
@@ -268,7 +247,7 @@ const About = () => {
             <h3>Plan the Campaign</h3>
 
             <p>
-            Brands lock in their campaign budgets and aesthetic requirements with us.
+              Brands lock in their campaign budgets and aesthetic requirements with us.
             </p>
 
           </div>
@@ -281,7 +260,7 @@ const About = () => {
             <h3>Verified Creator Match</h3>
 
             <p>
-            We hand-pick and assign the ideal, verified creator from our exclusive network.
+              We hand-pick and assign the ideal, verified creator from our exclusive network.
             </p>
 
           </div>
@@ -294,7 +273,7 @@ const About = () => {
             <h3>Drive Real Engagement</h3>
 
             <p>
-            Creators visit, capture authentic content, and drive measurable local engagement.
+              Creators visit, capture authentic content, and drive measurable local engagement.
             </p>
 
           </div>

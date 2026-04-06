@@ -1,0 +1,327 @@
+/* 🔥 RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.career {
+    width: 100%;
+    min-height: 100vh;
+    background: #ffffff;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+/* 🔥 HEADER */
+.career-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* 🔥 TEXT IMAGE EFFECT */
+.career-title {
+    font-size: 140px;
+    font-weight: 900;
+    word-spacing: 40px;
+    text-transform: uppercase;
+    background: url("../assets/service-bg.png") center/cover no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Unbounded, "sans-serif";
+}
+
+/* 🔥 NAV TEXT */
+.career-nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1350px;
+    margin: 15px auto 0;
+    font-size: 18px;
+    color: #000;
+    gap: 100px;
+    margin-top: -10px;
+}
+
+/* 🔥 BANNER IMAGE */
+.career-banner {
+    width: 100%;
+    height: 63vh;
+    border-radius: 20px;
+    background: url("../assets/contact-bg.png") center/cover no-repeat;
+    margin-top: 20px;
+}
+
+/* 🔥 BOTTOM IMAGE SPACE */
+.career-bottom {
+    width: 100%;
+    height: 40vh;
+    margin-top: 30px;
+    border-radius: 20px;
+    background: #ddd;
+    /* placeholder */
+}
+
+/* 🔥 RESPONSIVE */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .career-title {
+        font-size: 12vw;
+    }
+
+    .career-banner {
+        height: 40vh;
+    }
+
+    .career-bottom {
+        height: 30vh;
+    }
+
+    .career-nav {
+        font-size: 12px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .career-title {
+        font-size: 14vw;
+        line-height: 60px;
+        word-spacing: 10px;
+    }
+
+    .career-nav {
+        flex-direction: row;
+        gap: 5px;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .career-banner {
+        height: 60vh;
+    }
+
+    .career-bottom {
+        height: 25vh;
+    }
+}
+
+/*---------------------------------------- job card ------------------------*/
+
+.card-career {
+    width: 100%;
+    min-height: 100vh;
+    /* background: #f3f3f3; */
+    padding: 40px 20px;
+    /* font-family: 'Unbounded', sans-serif; */
+    font-family: sans-serif;
+}
+
+/* 🔥 HEADING */
+.card-hiring-title {
+    text-align: center;
+    font-size: 7vw;
+    font-weight: 800;
+    color: transparent;
+    -webkit-text-stroke: 1px #2c2c2c;
+    margin-bottom: 40px;
+    letter-spacing: 3px;
+    margin-top: -10px;
+}
+
+/* 🔥 GRID */
+.card-jobs-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* 🔥 CARD */
+.card-job-card {
+    border-radius: 25px;
+    overflow: hidden;
+    transition: 0.3s ease;
+    width: 400px;
+}
+
+.card-job-card:hover {
+    transform: translateY(-8px);
+}
+
+/* 🔥 TOP (IMAGE BASED CURVE) */
+.card-job-top {
+    position: relative;
+    background: url("../assets/career-card.png") no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding: 80px 25px 50px;
+    border-radius: 25px 25px 0 0;
+    font-family: Unbounded, "sans-serif";
+}
+
+/* 🔥 JOB TEXT (CURVE CENTER) */
+.card-job-number {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Unbounded, "sans-serif";
+}
+
+/* 🔥 TITLE */
+.card-job-category {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+/* 🔥 DESC */
+.card-job-desc {
+    font-size: 13px;
+    color: #000;
+    margin: 15px 0;
+    line-height: 1.8;
+    font-family:Unbounded,sans-serif;
+
+}
+
+/* 🔥 META */
+.card-job-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-location {
+    font-size: 13px;
+}
+
+.card-type {
+    background: #f2dc88;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+/* 🔥 BOTTOM */
+/* 🔥 BOTTOM */
+.card-job-bottom {
+    position: relative;
+    background: linear-gradient(135deg, #1f2230, #2b2f45);
+    text-align: center;
+    padding: 30px 20px 35px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* 🔥 BIG BACKGROUND TEXT (ghost effect) */
+.card-job-bottom::before {
+    content: "Apply Now";
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.05); /* 🔥 light faded */
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+/* 🔥 ARROW (perfect overlap) */
+.card-arrow {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65px;
+    height: 65px;
+    background: #f3f3f3;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 🔥 ARROW ICON STYLE */
+.card-arrow::after {
+    content: "↗";
+    font-size: 22px;
+    font-weight: bold;
+    color: #1f2230;
+}
+
+/* 🔥 MAIN TEXT */
+.card-apply-text {
+    position: relative;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+    z-index: 2;
+}
+
+/* 🔥 ARROW */
+.card-arrow {
+    position: absolute;
+    top: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    background: #f3f3f3;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 🔥 APPLY TEXT */
+.card-apply-text {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+/* 🔥 RESPONSIVE */
+
+/* Tablet */
+@media (max-width: 900px) {
+    .card-jobs-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-hiring-title {
+        font-size: 10vw;
+    }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+    .card-jobs-container {
+        grid-template-columns: 1fr;
+    }
+
+    .card-hiring-title {
+        font-size: 52px;
+        line-height: 55px;
+    }
+
+    .card-arrow {
+        width: 50px;
+        height: 50px;
+    }
+
+    .card-apply-text {
+        font-size: 18px;
+    }
+}
