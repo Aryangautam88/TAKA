@@ -222,6 +222,10 @@
 
 @media(max-width:600px) {
 
+  .contact{
+    padding: 20px 6%;
+  }
+
   .paperIcon {
       width: 130px;
       margin: 20px auto 0;
