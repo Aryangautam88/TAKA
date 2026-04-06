@@ -33,6 +33,7 @@ body {
     word-spacing: 40px;
     text-transform: uppercase;
     background: url("../assets/service-bg.png") center/cover no-repeat;
+     background-clip: text;  
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Unbounded, "sans-serif";
