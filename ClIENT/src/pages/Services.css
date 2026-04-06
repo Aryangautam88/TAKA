@@ -251,7 +251,7 @@ body {
 @media (max-width: 600px) {
 
     .heroCenter-L {
-        top: 55%; /* thoda upar for better view */
+        top: 50%; /* thoda upar for better view */
     }
 
     .heroTopText-L {
