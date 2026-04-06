@@ -10,7 +10,7 @@ import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 
 import ScrollToTop from "./ScrollToTop";
-// import Career from "./pages/Career";
+import Career from "./pages/Career";
 // import SignupInfluencer from "./pages/SignupInfluencer";
 // import SignupBusiness from "./pages/SignupBusiness";
 
@@ -26,7 +26,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
-          {/* <Route path="/career" element={<Career />} /> */}
+          <Route path="/career" element={<Career />} />
           {/* <Route path="/signup-influencer" element={<SignupInfluencer />} /> */}
           {/* <Route path="/signup-business" element={<SignupBusiness />} /> */}
         </Routes>

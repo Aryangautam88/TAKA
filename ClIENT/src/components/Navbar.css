@@ -70,7 +70,7 @@ html,body{
   border-radius: 999px;
   border: none;
   background: transparent;
-  color: #fff;
+  color: rgba(32, 34, 49, 1);
   font-size: 12px;
   font-weight: 500;
   cursor: pointer;
