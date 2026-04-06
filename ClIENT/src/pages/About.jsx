@@ -8,6 +8,7 @@ import about_cta from "../assets/about_cta.png";
 import textBg from "../assets/service-bg.png";   // 👈 text ke liye image
 import desktopImg from "../assets/About-bg.png";
 import mobileImg from "../assets/service-phone.png";
+import abhishek from "../assets/abhishek.jpeg";
 
 const About = () => {
   return (
@@ -128,7 +129,7 @@ const About = () => {
                   <img src={about_hero1} alt="team" />
                 </div>
 
-                <h4>Aryan Gautam <span>/ App Developer</span></h4>
+                <h4>Aryan Gautam <span>/ Full Stack Developer</span></h4>
 
               </div>
 
@@ -145,11 +146,11 @@ const About = () => {
                   <img src={about_hero1} alt="team" />
                 </div>
 
-                <h4> Kritika Singh <span>/ App Developer</span></h4>
+                <h4> Kritika Singh <span>/ Full Stack Developer</span></h4>
 
               </div>
 
-              <p className="team__link">About Him ↗</p>
+              <p className="team__link">About Hem ↗</p>
 
             </div>
 
@@ -162,24 +163,7 @@ const About = () => {
                   <img src={about_hero1} alt="team" />
                 </div>
 
-                <h4>Shreyansh Tiwari <span>/ App Developer</span></h4>
-
-              </div>
-
-              <p className="team__link">About Him ↗</p>
-
-            </div>
-
-
-            <div className="team__member">
-
-              <div className="team__info">
-
-                <div className="team__avatar">
-                  <img src={about_hero1} alt="team" />
-                </div>
-
-                <h4>David Cooper <span>/ App Developer</span></h4>
+                <h4>Shreyansh Tiwari <span>/ Content Writer</span></h4>
 
               </div>
 
