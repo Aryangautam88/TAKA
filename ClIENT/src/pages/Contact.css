@@ -32,7 +32,7 @@ html, body {
 .contact-card-c {
   width: 90vw;
   max-width: 1400px;
-  padding: 60px;
+  padding: 70px;
 
   /* ❌ FIXED HEIGHT REMOVE */
   height: auto;
@@ -174,13 +174,13 @@ textarea {
     width: calc(100% - 20px);
     margin: 10px auto;
     margin-top: 80px;
-    padding:25px;
+    padding:10px;
   }
 
   .contact-card-c {
   
     padding: 30px;
-    gap: 30px;
+    gap: 10px;
   }
 
   /* LEFT */
