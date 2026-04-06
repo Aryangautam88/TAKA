@@ -22,7 +22,7 @@ import influencer5 from "../assets/influencer5.png";
 // import paperIcon from "../assets/boat.png";
 import center from "../assets/center.png";
 import frame from "../assets/Influencer_Card.png";
-import mobileCenter from "../assets/HomeMobile.png";
+import mobileCenter from "../assets/homeimage.png";
 
 import { FaBullseye } from "react-icons/fa";
 import { RiSecurePaymentLine } from "react-icons/ri";
