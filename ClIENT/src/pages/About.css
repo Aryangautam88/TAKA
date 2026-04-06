@@ -866,12 +866,12 @@
 
 .about_features {
   background: #f5f5f5;
-  padding: 120px 8%;
+  padding: 120px 8% 0px;
   font-family: "Poppins", sans-serif;
 }
 
 .about_features__container {
-  max-width: 1300px;
+  max-width: 1400px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
