@@ -151,7 +151,7 @@ const About = () => {
 
               </div>
 
-              <p className="team__link">About Hem ↗</p>
+              <p className="team__link">About Her ↗</p>
 
             </div>
 

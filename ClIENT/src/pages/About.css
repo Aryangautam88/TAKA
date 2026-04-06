@@ -749,7 +749,7 @@
 /* ================= FEATURES SECTION ================= */
 
 .about_features {
-  background: #f5f5f5;
+  background: #ffffff;
   padding: 120px 8% 0px;
   font-family: "Poppins", sans-serif;
 }
@@ -859,7 +859,7 @@
 
 @media (max-width: 600px) {
   .about_features {
-    padding: 80px 10px 40px 34px;
+    padding: 50px;
   }
 
   .about_features__container {
