@@ -1,17 +1,22 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
+import { Link } from "react-router-dom";
+
 
 import toolsImg from "../assets/toolsImg.png";
-import target from "../assets/target.png";
-import s1 from "../assets/service1.png";
-import s2 from "../assets/service2.png";
-import s3 from "../assets/service3.jpg";
-import s4 from "../assets/service4.jpg";
+
+import s1 from "../assets/s1.jpg";
+import s2 from "../assets/service2.avif";
+import s3 from "../assets/service3.avif";
+import s4 from "../assets/service4.avif";
 // import stepIcon from "../assets/stepIcon.png";
 // import diamond from "../assets/dimond.png";
 // import infinity from "../assets/infinity.png";
-import client1 from "../assets/client1.png";
-import client2 from "../assets/client2.png";
+import influencer1 from "../assets/influencer1.jpeg";
+import influencer2 from "../assets/influencer2.jpeg";
+import influencer3 from "../assets/influencer3.jpeg";
+import influencer4 from "../assets/influencer4.png";
+import influencer5 from "../assets/influencer5.png";
 // import leftImg from "../assets/lefthome.png";
 // import rightImg from "../assets/righthome.png";
 // import paperIcon from "../assets/boat.png";
@@ -19,13 +24,20 @@ import center from "../assets/center.png";
 import frame from "../assets/Influencer_Card.png";
 import mobileCenter from "../assets/HomeMobile.png";
 
+import { FaBullseye } from "react-icons/fa";
+import { RiSecurePaymentLine } from "react-icons/ri";
+import { MdOutlineAdminPanelSettings } from "react-icons/md";
+import { AiOutlineCheckCircle } from "react-icons/ai";
+import { BiRocket } from "react-icons/bi";
+import { HiOutlineSparkles } from "react-icons/hi";
+
 const offersData = [
-    { title: "Inbound Collabs" },
-    { title: "The Escrow Vault" },
-    { title: "Zero Admin Work" },
-    { title: "Verified Local Reach" },
-    { title: "Risk-Free Execution" },
-    { title: "Effortless Matchmaking" },
+    { title: "Inbound Collabs", icon: <FaBullseye /> },
+    { title: "The Escrow Vault", icon: <RiSecurePaymentLine /> },
+    { title: "Zero Admin Work", icon: <MdOutlineAdminPanelSettings /> },
+    { title: "Verified Lead Reach", icon: <AiOutlineCheckCircle /> },
+    { title: "Risk Free Execution", icon: <BiRocket /> },
+    { title: "Effortless Matchmaking", icon: <HiOutlineSparkles /> },
 ];
 const servicesData = [
     {
@@ -54,12 +66,6 @@ const servicesData = [
     },
 ];
 
-// const steps = [
-//     { number: "01", title: "Lorem Ipsum" },
-//     { number: "02", title: "Lorem Ipsum" },
-//     { number: "03", title: "Lorem Ipsum" },
-//     { number: "04", title: "Lorem Ipsum" },
-// ];
 
 const testimonials = [
     {
@@ -109,12 +115,13 @@ const Card = ({ data }) => (
         </div>
     </div>
 );
-const clients = [client1, client2, client1, client2];
+
+const clients = [influencer1, influencer2, influencer3, influencer4, influencer5,influencer4];
 
 
 const Home = () => {
 
-    const [active, setActive] = useState(null);
+    
 
     const [index, setIndex] = useState(0);
 
@@ -243,18 +250,17 @@ const Home = () => {
                     {offersData.map((item, i) => (
                         <div className="offerCard" key={i}>
 
-                            <img src={target} alt="" className="offerIcon" />
+                            <div className="offerIcon">
+                                {item.icon}
+                            </div>
 
                             <h3>{item.title}</h3>
 
-                            {/* animated button */}
-                            <button
-                                className={`offerBtn ${active === i ? "active" : ""}`}
-                                onClick={() => setActive(i)}
-                            >
-                                <span>FIND OUT MORE  ➔</span>
-
-                            </button>
+                            <Link to="/services">
+                                <button className="offerBtn">
+                                    <span>FIND OUT MORE ➔</span>
+                                </button>
+                            </Link>
 
                         </div>
                     ))}
@@ -262,6 +268,53 @@ const Home = () => {
                 </div>
 
             </section>
+
+
+
+
+
+
+
+            <div className="stats">
+                <div className="stats__left">
+                    <h2 className="stats__title">OUR COMPANY STATS</h2>
+                    <p className="stats__desc">
+                        Numbers that reflect our growth, performance and commitment to brands that trust us.
+                    </p>
+                </div>
+
+                <div className="stats__right">
+                    <div className="statCard">
+                        <h3 className="statCard__number">50+</h3>
+                        <p className="statCard__label">VERIFIED <br /> CREATORS</p>
+                        <span className="statCard__small">
+                            A highly curated, invite-only roster of Indore's most engaging digital talent.
+                        </span>
+                    </div>
+
+                    <div className="statCard">
+                        <h3 className="statCard__number">20+</h3>
+                        <p className="statCard__label"> PREMIUM<br /> BRANDS</p>
+                        <span className="statCard__small">
+                            Partnering with the city's top cafes, event organizers, and lifestyle brands.
+                        </span>
+                    </div>
+
+                    <div className="statCard">
+                        <h3 className="statCard__number">100%</h3>
+                        <p className="statCard__label">SEAMLESS <br /> COLLABS</p>
+                        <span className="statCard__small">
+                            Zero friction from the initial brand pitch to the final published post.                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
 
             {/*-------------------------------services --------------------------*/}
 
@@ -308,150 +361,69 @@ const Home = () => {
                 </div>
             </section>
 
-
-            {/* -------------------------------process-------------------------- */}
-
-            {/* <section className="process">
-
-                
-                <div className="process__header">
-                    <div className="process__title">
-                        <h2>
-                            <span className="outline">STEPS</span>
-                            <br />
-                            WE DO
-                        </h2>
-
-                        <div className="workProcessText">
-                            WORK<br />PROCESS
-                        </div>
-                    </div>
-
-                    
-                    <img src={diamond} alt="" className="diamondShape" />
-                </div>
-
-
-                
-                <div className="process__grid">
-
-                    {steps.map((step, i) => (
-                        <div className={`processCard card${i + 1}`} key={i}>
-
-                            <div className="stepNumber">{step.number}</div>
-
-                            <div className="iconBox">
-                                <img src={stepIcon} alt="" />
-                            </div>
-
-                            <p>{step.title}</p>
-
-                        </div>
-                    ))}
-
-                    
-                    <div className="startCircle">
-                        LET’S<br />START
-                    </div>
-
-                </div>
-            </section> */}
-
             {/*--------------------------------CLIENTS ---------------------------*/}
 
 
             <div className="clients">
-    
-    <div className="clients__header">
-        <h2 className="clients__title">
-            OUR <br /> CLIENTS <span className="clients__highlight"></span>
-        </h2>
 
-        <p className="clients__desc">
-            We collaborate with influencers and businesses worldwide,
-            creating successful brand partnerships and campaigns
-            creating successful brand partnerships and campaigns.
-        </p>
-    </div>
+                <div className="clients__header">
+                    <h2 className="clients__title">
+                        OUR CLIENTS <span className="clients__highlight"></span>
+                    </h2>
 
-    <div className="clients__slider">
-        <div className="clients__track">
+                    <p className="clients__desc">
+                        We collaborate with influencers and businesses worldwide,
+                        creating successful brand partnerships and campaigns
+                        creating successful brand partnerships and campaigns.
+                    </p>
+                </div>
 
-            {[...clients, ...clients].map((img, i) => (
-                <div className="clientCard" key={i}>
+                <div className="clients__slider">
+                    <div className="clients__track">
 
-                    <div className="clientFrame">
+                        {[...clients, ...clients].map((img, i) => (
+                            <div className="clientCard" key={i}>
 
-                        {/* frame */}
-                        <img
-                            src={frame}
-                            className="frameBg"
-                            alt="frame"
-                        />
+                                <div className="clientFrame">
 
-                        {/* client image */}
-                        <img
-                            src={img}
-                            className="clientImg"
-                            alt="client"
-                        />
+                                    {/* frame */}
+                                    <img
+                                        src={frame}
+                                        className="frameBg"
+                                        alt="frame"
+                                    />
+
+                                    {/* client image */}
+                                    <img
+                                        src={img}
+                                        className="clientImg"
+                                        alt="client"
+                                    />
+
+                                </div>
+
+                            </div>
+                        ))}
 
                     </div>
-
                 </div>
-            ))}
 
-        </div>
-    </div>
-
-</div>
+            </div>
 
 
             {/*---------------------------------STATS-------------------------------*/}
 
 
-            <div className="stats">
-                <div className="stats__left">
-                    <h2 className="stats__title">OUR COMPANY STATS</h2>
-                    <p className="stats__desc">
-                        Numbers that reflect our growth, performance and commitment to brands that trust us.
-                    </p>
-                </div>
 
-                <div className="stats__right">
-                    <div className="statCard">
-                        <h3 className="statCard__number">50+</h3>
-                        <p className="statCard__label">VERIFIED <br /> CREATORS</p>
-                        <span className="statCard__small">
-                            A highly curated, invite-only roster of Indore's most engaging digital talent.
-                        </span>
-                    </div>
-
-                    <div className="statCard">
-                        <h3 className="statCard__number">20+</h3>
-                        <p className="statCard__label"> PREMIUM<br /> BRANDS</p>
-                        <span className="statCard__small">
-                            Partnering with the city's top cafes, event organizers, and lifestyle brands.
-                        </span>
-                    </div>
-
-                    <div className="statCard">
-                        <h3 className="statCard__number">100%</h3>
-                        <p className="statCard__label">SEAMLESS <br /> COLLABS</p>
-                        <span className="statCard__small">
-                            Zero friction from the initial brand pitch to the final published post.                        </span>
-                    </div>
-                </div>
-            </div>
 
 
             {/*-----------------------------testimonial--------------------------------*/}
 
-            <section className="testimonial-section">
+            {/* <section className="testimonial-section">
 
                 <div className="title-row">
                     <h2 className="title">
-                        WORDS OF PRAISE FROM OTHERS <br /> ABOUT OUR PRESENCE
+                        WORDS OF PRAISE FROM OTHERS ABOUT OUR PRESENCE
                     </h2>
 
                     <div className="title-loader">
@@ -459,7 +431,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                {/* ROW 1 */}
+                
                 <div className="marquee">
                     <div className="track">
                         {[...testimonials, ...testimonials].map((t, i) => (
@@ -468,7 +440,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                {/* ROW 2 (reverse direction) */}
+               
                 <div className="marquee reverse">
                     <div className="track">
                         {[...testimonials, ...testimonials].map((t, i) => (
@@ -477,7 +449,7 @@ const Home = () => {
                     </div>
                 </div>
 
-            </section>
+            </section> */}
 
 
         </section>

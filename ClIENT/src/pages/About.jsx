@@ -5,9 +5,13 @@ import about_hero1 from "../assets/about_hero1.png";
 import diamond1 from "../assets/diamond1.png";
 import about3 from "../assets/about3.png";
 import about_cta from "../assets/about_cta.png";
+<<<<<<< HEAD
 import textBg from "../assets/service-bg.png";   // 👈 text ke liye image
 import desktopImg from "../assets/About-bg.png";
 import mobileImg from "../assets/service-phone.png";
+=======
+import abhishek from "../assets/abhishek.jpeg";
+>>>>>>> a6f3bf071eb3cb6b7da943250563b82216b6cb88
 
 const About = () => {
   return (
@@ -48,7 +52,7 @@ const About = () => {
           {/* LEFT IMAGE */}
           <div className="founder__image-wrapper">
             <img
-              src={about_hero1}
+              src={abhishek}
               alt="Founder"
               className="founder__image"
             />
@@ -128,7 +132,28 @@ const About = () => {
                   <img src={about_hero1} alt="team" />
                 </div>
 
+<<<<<<< HEAD
                 <h4>Aryan Gautam <span>/ App Developer</span></h4>
+=======
+                <h4>Kritika Singh <span>/ Full Stack Developer</span></h4>
+
+              </div>
+
+              <p className="team__link">About Her ↗</p>
+
+            </div>
+
+
+            <div className="team__member">
+
+              <div className="team__info">
+
+                <div className="team__avatar">
+                  <img src={about_hero1} alt="team" />
+                </div>
+
+                <h4>Aryan Gautam <span>/ Full Stack Developer</span></h4>
+>>>>>>> a6f3bf071eb3cb6b7da943250563b82216b6cb88
 
               </div>
 
@@ -145,6 +170,7 @@ const About = () => {
                   <img src={about_hero1} alt="team" />
                 </div>
 
+<<<<<<< HEAD
                 <h4> Kritika Singh <span>/ App Developer</span></h4>
 
               </div>
@@ -180,6 +206,9 @@ const About = () => {
                 </div>
 
                 <h4>David Cooper <span>/ App Developer</span></h4>
+=======
+                <h4>Shreyansh Tiwari <span>/ Content Writer</span></h4>
+>>>>>>> a6f3bf071eb3cb6b7da943250563b82216b6cb88
 
               </div>
 
@@ -220,14 +249,6 @@ const About = () => {
               Stop paying for empty vanity metrics. Partner with local creators who actually bring customers through your doors.
             </p>
 
-            <div className="about_cta__input">
-
-              <input type="email" placeholder="Your e-mail" />
-
-              <span className="about_cta__arrow">↗</span>
-
-            </div>
-
           </div>
 
 
@@ -258,7 +279,6 @@ const About = () => {
               Brands lock in their campaign budgets and aesthetic requirements with us.
             </p>
 
-            <a href="#">FIND OUT MORE ↗</a>
           </div>
 
 
@@ -272,7 +292,6 @@ const About = () => {
               We hand-pick and assign the ideal, verified creator from our exclusive network.
             </p>
 
-            <a href="#">FIND OUT MORE ↗</a>
           </div>
 
 
@@ -286,7 +305,6 @@ const About = () => {
               Creators visit, capture authentic content, and drive measurable local engagement.
             </p>
 
-            <a href="#">FIND OUT MORE ↗</a>
           </div>
 
         </div>

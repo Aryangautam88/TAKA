@@ -82,7 +82,7 @@ const Footer = () => {
 
           <div className="community__card center">
             <button className="newsletter">SUBSCRIBE TO NEWSLETTER</button>
-            <h3>JOIN OUR INFLUENSO<br />COMMUNITY</h3>
+            <h3>JOIN OUR TAKA<br />COMMUNITY</h3>
           </div>
 
           <div className="community__card image">
@@ -110,8 +110,7 @@ const Footer = () => {
               <img src={taka_logo} alt="logo" />
             </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus.
+            Where brands and creators collaborate smarter to grow faster and reach the right audience.
             </p>
           </div>
 
