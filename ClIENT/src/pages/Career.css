@@ -287,7 +287,8 @@ body {
     }
 
     .card-job-meta {
-        flex-direction: column;
+        margin-top:20px ;
+        flex-direction: row;
         align-items: flex-start;
     }
 }
@@ -380,7 +381,7 @@ body {
     }
 
     .hero__desc-L {
-        font-size: 14px;
+        font-size: 13px;
         margin: 20px auto;
     }
 
@@ -393,8 +394,9 @@ body {
     .hero__title-L {
         font-size: 28px;
     }
+    
 
     .hero__btn-L {
-        width: 100%;
+        width: 60%;
     }
 }
