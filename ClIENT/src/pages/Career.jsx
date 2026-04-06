@@ -1,5 +1,6 @@
 import React from "react";
 import "./Career.css";
+import heroImg from "../assets/hero-pattern.png";
 
 const jobs = [
     {
@@ -100,6 +101,35 @@ const Career = () => {
                 </div>
 
             </div>
+
+            {/*-------------------------------- Last section------------------------  */}
+
+            <section className="hero-L">
+                <div className="hero__container-L">
+
+                    {/* LEFT CONTENT */}
+                    <div className="hero__content-L">
+                        <h1 className="hero__title-L">
+                            Lorem Ipsum Is <span>Simply</span>
+                        </h1>
+
+                        <p className="hero__desc-L">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                        </p>
+
+                        <button className="hero__btn-L">
+                            Get Started →
+                        </button>
+                    </div>
+
+                    {/* RIGHT IMAGE */}
+                    <div className="hero__image-L">
+                        <img src={heroImg} alt="design" />
+                    </div>
+
+                </div>
+            </section>
 
         </div>
     );

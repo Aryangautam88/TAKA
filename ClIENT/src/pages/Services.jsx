@@ -28,6 +28,28 @@ const Services = () => {
 
             <section className="servicesHero">
 
+                {/* CENTER TEXT */}
+                <div className="heroCenter-L">
+
+                    <span className="heroTopText-L">
+                        India’s Premium Influencer Marketing Platform
+                    </span>
+
+                    <h1 className="heroTitle-L">
+                        <span className="small-L">INFLUENCE</span>
+                        <br />
+                        <span className="medium-L">COMMERCE</span>
+                        <br />
+                        <span className="large-L">CONNECTED</span>
+                        <br />
+                    </h1>
+
+                    {/* <p className="heroSubText-L">
+                        Authentic Brand Collaborations & Real Engagement
+                    </p> */}
+
+                </div>
+
                 {/* Background Image */}
                 <img src={bg} alt="service" className="bgImage" />
 
