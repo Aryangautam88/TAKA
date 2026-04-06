@@ -9,15 +9,17 @@ const jobs = [
         category: "Sales & Marketing",
         location: "Indore, M.P",
         type: "Full Time",
-        link: "https://forms.gle/YOUR_FORM_LINK"
+        link: "https://forms.gle/YOUR_FORM_LINK",
+        desc: "Identify and connect with influencers across platforms like Instagram, YouTube, and LinkedIn. Build strong relationships with creators, manage outreach campaigns, and onboard influencers for brand collaborations. Strong communication and negotiation skills required."
     },
     {
         id: 2,
         title: "Production Designer",
-        category: "Sales & Marketing",
+        category: "Creative & Design",
         location: "Indore, M.P",
         type: "Full Time",
-        link: "https://forms.gle/YOUR_FORM_LINK"
+        link: "https://forms.gle/YOUR_FORM_LINK",
+        desc: "Design engaging creatives for influencer campaigns including social media posts, ads, and branding assets. Work closely with marketing and content teams to maintain visual consistency. Proficiency in tools like Figma, Photoshop, or Illustrator is required."
     },
     {
         id: 3,
@@ -25,7 +27,8 @@ const jobs = [
         category: "Sales & Marketing",
         location: "Indore, M.P",
         type: "Full Time",
-        link: "https://forms.gle/YOUR_FORM_LINK"
+        link: "https://forms.gle/YOUR_FORM_LINK",
+        desc: "Drive business growth by acquiring new brand clients and managing partnerships. Pitch influencer marketing solutions, close deals, and maintain client relationships. Strong sales mindset and communication skills are essential."
     }
 ];
 
@@ -67,19 +70,23 @@ const Career = () => {
                     {jobs.map((job) => (
                         <div className="card-job-card" key={job.id}>
 
-                            {/* 🔥 TOP WITH IMAGE */}
+                            {/* 🔥 TOP */}
                             <div className="card-job-top">
 
                                 <span className="card-job-number">Job {job.id}</span>
 
-                                <h3 className="card-job-category">Sales & Marketing</h3>
+                                {/* ✅ Dynamic Category */}
+                                <h3 className="card-job-category">{job.category}</h3>
 
+                                {/* ✅ Title add kar (important) */}
+                                <h2 className="card-job-title">{job.title}</h2>
+
+                                {/* ✅ Dynamic Description */}
                                 <p className="card-job-desc">
-                                    Glaebam ipsam nunc at hic reponat nam dicta lius te est iriure
-                                    in aut stante inceptos scandalum germaniafioniam vincere risus
-                                    Glaebam ipsam nunc at hic reponat nam dicta lius te est iriure...
+                                    {job.desc}
                                 </p>
 
+                                {/* ✅ Meta Info */}
                                 <div className="card-job-meta">
                                     <span className="card-location">📍 {job.location}</span>
                                     <span className="card-type">{job.type}</span>
@@ -92,7 +99,6 @@ const Career = () => {
                                 className="card-job-bottom"
                                 onClick={() => window.open(job.link, "_blank")}
                             >
-                                {/* <div className="card-arrow"></div> */}
                                 <h2 className="card-apply-text">Apply Now</h2>
                             </div>
 

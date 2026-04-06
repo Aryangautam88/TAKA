@@ -20,15 +20,19 @@
   letter-spacing: 5px;
   margin-top: 20px;
   margin-bottom: 10px;
-  font-family: Unbounded,"sans-serif";
+  font-family: Unbounded, "sans-serif";
+
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 
+  /* ✅ Add this line */
+  background-clip: text;
+
+  /* Existing */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  /* optional premium look */
   line-height: 1.1;
 }
 
@@ -833,9 +837,7 @@
   font-weight: 800;
 }
 
-.about_features__card:hover {
-  color: #ffd902;
-}
+
 
 /* ================= RESPONSIVE ================= */
 

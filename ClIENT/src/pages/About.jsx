@@ -66,7 +66,7 @@ const About = () => {
             </h2>
 
             <p className="founder__quote">
-              “To me, TAKA is more than just a service or a platform—it’s a direct solution to a very real problem.
+              “To me, TAKA is more than just a service or a platform - it’s a direct solution to a very real problem. 
               We recognized the exhausting friction in traditional influencer marketing and built TAKA to seamlessly
               bridge the gap between premium brands and verified creators.”
             </p>
