@@ -6,7 +6,7 @@ import diamond1 from "../assets/diamond1.png";
 import about3 from "../assets/about3.png";
 import about_cta from "../assets/hero-pattern.png";
 import textBg from "../assets/service-bg.png";   // 👈 text ke liye image
-import desktopImg from "../assets/About-bg.png";
+import desktopImg from "../assets/desktopImg.png";
 import mobileImg from "../assets/service-phone.png";
 import abhishek from "../assets/abhishek.jpeg";
  
