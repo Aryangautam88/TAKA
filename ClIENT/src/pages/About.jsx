@@ -4,7 +4,7 @@ import about_hero1 from "../assets/about_hero1.png";
 // import about_hero2 from "../assets/about_hero2.png";
 import diamond1 from "../assets/diamond1.png";
 import about3 from "../assets/about3.png";
-import about_cta from "../assets/about_cta.png";
+import about_cta from "../assets/hero-pattern.png";
 import textBg from "../assets/service-bg.png";   // 👈 text ke liye image
 import desktopImg from "../assets/About-bg.png";
 import mobileImg from "../assets/service-phone.png";
@@ -130,7 +130,7 @@ const About = () => {
                   <img src={about_hero1} alt="team" />
                 </div>
 
-                <h4>Aryan Gautam <span>/ Full Stack Developer</span></h4>
+                <h4>Aryan Gautam <span> <br /> Full Stack Developer</span></h4>
 
               </div>
 
@@ -147,11 +147,11 @@ const About = () => {
                   <img src={about_hero1} alt="team" />
                 </div>
 
-                <h4> Kritika Singh <span>/ Full Stack Developer</span></h4>
+                <h4> Kritika Singh <span> <br /> Full Stack Developer</span></h4>
 
               </div>
 
-              <p className="team__link">About Hem ↗</p>
+              <p className="team__link">About Her ↗</p>
 
             </div>
 
@@ -164,7 +164,7 @@ const About = () => {
                   <img src={about_hero1} alt="team" />
                 </div>
 
-                <h4>Shreyansh Tiwari <span>/ Content Writer</span></h4>
+                <h4>Shreyansh Tiwari <span> <br /> Content Writer</span></h4>
 
               </div>
 
