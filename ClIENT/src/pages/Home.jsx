@@ -116,12 +116,18 @@ const Card = ({ data }) => (
     </div>
 );
 
-const clients = [influencer1, influencer2, influencer3, influencer4, influencer5,influencer4];
+const clients = [
+    { img: influencer1, name: "Aishwary Agrawal", followers: "6.3k" },
+    { img: influencer2, name: "Tanisha Sharma", followers: "171k" },
+    { img: influencer3, name: "Shree Thakur", followers: "62.2k" },
+    { img: influencer4, name: "Neha Jain", followers: "150K" },
+    { img: influencer5, name: "Simran Kaur", followers: "95K" },
+];
 
 
 const Home = () => {
 
-    
+
 
     const [index, setIndex] = useState(0);
 
@@ -271,7 +277,7 @@ const Home = () => {
 
 
 
-
+            {/*---------------------------------STATS-------------------------------*/}
 
 
 
@@ -381,7 +387,7 @@ const Home = () => {
                 <div className="clients__slider">
                     <div className="clients__track">
 
-                        {[...clients, ...clients].map((img, i) => (
+                        {[...clients, ...clients].map((client, i) => (
                             <div className="clientCard" key={i}>
 
                                 <div className="clientFrame">
@@ -395,10 +401,16 @@ const Home = () => {
 
                                     {/* client image */}
                                     <img
-                                        src={img}
+                                        src={client.img}
                                         className="clientImg"
-                                        alt="client"
+                                        alt={client.name}
                                     />
+
+                                    {/* 🔥 OVERLAY TEXT */}
+                                    <div className="clientOverlay">
+                                        <h4>{client.name}</h4>
+                                        <p>{client.followers} Followers</p>
+                                    </div>
 
                                 </div>
 
@@ -409,9 +421,6 @@ const Home = () => {
                 </div>
 
             </div>
-
-
-            {/*---------------------------------STATS-------------------------------*/}
 
 
 
