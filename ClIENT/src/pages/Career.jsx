@@ -6,28 +6,28 @@ const jobs = [
     {
         id: 1,
         title: "Outreach Specialist",
-        category: "Sales & Marketing",
+        category: "PR & Outreach",
         location: "Indore, M.P",
         type: "Full Time",
-        link: "https://forms.gle/YOUR_FORM_LINK",
+        link: "https://forms.gle/ehBSZDHh86WY922h8",
         desc: "Identify and connect with influencers across platforms like Instagram, YouTube, and LinkedIn. Build strong relationships with creators, manage outreach campaigns, and onboard influencers for brand collaborations. Strong communication and negotiation skills required."
     },
     {
         id: 2,
-        title: "Production Designer",
-        category: "Creative & Design",
+        title: "Production",
+        category: "Production",
         location: "Indore, M.P",
         type: "Full Time",
-        link: "https://forms.gle/YOUR_FORM_LINK",
+        link: "https://forms.gle/3NKW7Ed2cPTQ1RSC7",
         desc: "Design engaging creatives for influencer campaigns including social media posts, ads, and branding assets. Work closely with marketing and content teams to maintain visual consistency. Proficiency in tools like Figma, Photoshop, or Illustrator is required."
     },
     {
         id: 3,
         title: "Sales Executive",
-        category: "Sales & Marketing",
+        category: "Graphic Designing",
         location: "Indore, M.P",
         type: "Full Time",
-        link: "https://forms.gle/YOUR_FORM_LINK",
+        link: "https://forms.gle/zHLcno8MLTqVU32J9",
         desc: "Drive business growth by acquiring new brand clients and managing partnerships. Pitch influencer marketing solutions, close deals, and maintain client relationships. Strong sales mindset and communication skills are essential.Proficiency in tools  Illustrator is required."
     }
 ];

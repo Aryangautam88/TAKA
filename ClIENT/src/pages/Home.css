@@ -23,12 +23,10 @@ body {
     margin-bottom: 80px;
 
     /* 🔥 Exact soft yellow → cream gradient */
-    background: linear-gradient(
-        to top,
-        #fceb88 0%,
-        #f8e991 25%,
-        #f5f2ea 100%
-    );
+    background: linear-gradient(to top,
+            #fceb88 0%,
+            #f8e991 25%,
+            #f5f2ea 100%);
 }
 
 
@@ -74,7 +72,7 @@ body {
 }
 
 
-.trusted-header{
+.trusted-header {
     margin-top: 30px;
 }
 
@@ -142,14 +140,14 @@ body {
 }
 
 @media (max-width: 600px) {
-    .trusted-section{
-       /* margin-top: 60px !important; */
+    .trusted-section {
+        /* margin-top: 60px !important; */
         /* padding: 10px !important; */
         margin-top: -80px;
 
-    } 
+    }
 
-    .trusted-header{
+    .trusted-header {
         padding: 10px 20px;
     }
 
@@ -184,29 +182,29 @@ body {
 /* -----phone image ----------*/
 /* default: mobile hidden */
 .mobile-img {
-  display: none;
+    display: none;
 }
 
 /* desktop visible */
 .desktop-img {
-  display: block;
+    display: block;
 }
 
 /* MOBILE VIEW */
 @media (max-width: 600px) {
-  .desktop-img {
-    display: none;
-  }
+    .desktop-img {
+        display: none;
+    }
 
-  .mobile-img {
-    display: block;
-    max-width: 100%;
-  }
+    .mobile-img {
+        display: block;
+        max-width: 100%;
+    }
 }
 
 .desktop-img,
 .mobile-img {
-  transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
 }
 
 /* =================------------------ TOOLS SECTION -----------------================= */
@@ -261,7 +259,7 @@ body {
     font-weight: 800;
     color: #1d1e24;
     margin-bottom: 18px;
-   font-family: "Unbounded", sans-serif;
+    font-family: "Unbounded", sans-serif;
 }
 
 .tools__desc {
@@ -451,7 +449,7 @@ body {
 }
 
 .offers__header h2 {
-   font-family: "Unbounded", sans-serif;
+    font-family: "Unbounded", sans-serif;
     font-size: 54px;
     line-height: 1.1;
     color: #22242c;
@@ -489,8 +487,10 @@ body {
 .offerCard {
     display: flex;
     flex-direction: column;
-    align-items: center; /* 🔥 FULL CENTER CONTROL */
+    align-items: center;
+    /* 🔥 FULL CENTER CONTROL */
 }
+
 /* ================= GRID ================= */
 
 .offers__grid {
@@ -694,7 +694,7 @@ body {
 }
 
 .services__top h2 {
-   font-family: "Unbounded", sans-serif;
+    font-family: "Unbounded", sans-serif;
     font-size: 56px;
     margin-top: 6px;
     font-weight: 900;
@@ -726,7 +726,7 @@ body {
 .serviceCard {
     min-width: 100%;
     position: relative;
-    
+
 }
 
 .serviceCard img {
@@ -864,10 +864,11 @@ body {
         font-size: 16px;
         color: #000000;
     }
-    .services__desc{
-        font-size:13.5px;
+
+    .services__desc {
+        font-size: 13.5px;
     }
-    
+
 
     .serviceCard img {
         height: 440px;
@@ -1046,10 +1047,21 @@ body {
 /* ===== STAGGER (ONLY DESKTOP) ===== */
 
 @media (min-width: 993px) {
-    .card1 { transform: translateY(40px); }
-    .card2 { transform: translateY(40px); }
-    .card3 { transform: translateY(-100px); }
-    .card4 { transform: translateY(40px); }
+    .card1 {
+        transform: translateY(40px);
+    }
+
+    .card2 {
+        transform: translateY(40px);
+    }
+
+    .card3 {
+        transform: translateY(-100px);
+    }
+
+    .card4 {
+        transform: translateY(40px);
+    }
 }
 
 /* ===== CENTER CIRCLE ===== */
@@ -1322,7 +1334,8 @@ body {
 
 .clients {
     padding: 20px 1% 80px;
-    overflow: hidden; /* 🔥 prevent overflow issues */
+    overflow: hidden;
+    /* 🔥 prevent overflow issues */
 }
 
 /* ===== HEADER ===== */
@@ -1370,7 +1383,8 @@ body {
     display: flex;
     gap: 40px;
     width: max-content;
-    height: auto; /* 🔥 flexible height */
+    height: auto;
+    /* 🔥 flexible height */
     animation: clientMarquee 40s linear infinite;
 }
 
@@ -1381,6 +1395,7 @@ body {
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(-50%);
     }
@@ -1467,6 +1482,87 @@ body {
     transform: translateX(-50%);
 }
 
+/* ===== OVERLAY TEXT (GLASS EFFECT) ===== */
+
+.clientOverlay {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
+
+    padding: 10px 12px;
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.25);
+    /* glass look */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+    z-index: 2;
+}
+
+/* name */
+.clientOverlay h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    color: #000;
+}
+
+/* followers */
+.clientOverlay p {
+    font-size: 12px;
+    margin: 2px 0 0;
+    color: #333;
+}
+
+
+/* ===== MOBILE RESPONSIVE OVERLAY ===== */
+
+@media (max-width:600px) {
+
+    .clientOverlay {
+        bottom: 12px;
+        width: 85%;
+        padding: 8px 10px;
+        border-radius: 10px;
+
+        backdrop-filter: blur(8px);
+        /* slightly lighter for mobile */
+    }
+
+    .clientOverlay h4 {
+        font-size: 12px;
+    }
+
+    .clientOverlay p {
+        font-size: 10px;
+    }
+}
+
+
+@media (max-width:992px) {
+
+    .clientOverlay {
+        bottom: 20px;
+        width: 75%;
+        padding: 9px 11px;
+    }
+
+    .clientOverlay h4 {
+        font-size: 10px;
+    }
+
+    .clientOverlay p {
+        font-size: 8px;
+    }
+}
+
 /* ================= RESPONSIVE ================= */
 
 /* laptop */
@@ -1483,7 +1579,7 @@ body {
         height: 380px;
     }
 
-    .clientImg{
+    .clientImg {
         top: 80px;
     }
 }
@@ -1509,10 +1605,11 @@ body {
 
     .clientCard:nth-child(odd),
     .clientCard:nth-child(even) {
-        transform: translateY(0); /* 🔥 remove zigzag on tablet */
+        transform: translateY(0);
+        /* 🔥 remove zigzag on tablet */
     }
 
-    .clientImg{
+    .clientImg {
         top: 70;
     }
 }
@@ -1523,7 +1620,8 @@ body {
 
     .clients {
         padding: 30px 0 60px;
-        margin-top: 0; /* 🔥 removed negative */
+        margin-top: 0;
+        /* 🔥 removed negative */
     }
 
     .clients__header {
@@ -1544,7 +1642,8 @@ body {
     }
 
     .clients__slider {
-        min-height: auto; /* 🔥 remove extra space */
+        min-height: auto;
+        /* 🔥 remove extra space */
         padding: 20px 0;
     }
 
@@ -1570,6 +1669,18 @@ body {
     .badge img {
         width: 18px;
     }
+}
+
+.clientType {
+    display: inline-block;
+    font-size: 11px;
+    padding: 4px 15px;
+    border-radius: 20px;
+
+    background: rgba(124, 58, 237, 0.15);
+    color:#000 ;
+
+    font-weight: 600;
 }
 
 /*----------------------------------------- testimonial------------------------- */
@@ -1842,16 +1953,15 @@ body {
     .track {
         gap: 18px;
     }
+
     .marquee::before {
-    left: 0;
-    background: linear-gradient(to right, transparent);
+        left: 0;
+        background: linear-gradient(to right, transparent);
+    }
+
+    .marquee::after {
+        right: 0;
+        background: linear-gradient(to left, transparent);
+    }
+
 }
-
-.marquee::after {
-    right: 0;
-    background: linear-gradient(to left,  transparent);
-}
-
-}
-
-

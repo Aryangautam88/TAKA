@@ -2,9 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
 
-
 import toolsImg from "../assets/toolsImg.png";
-
 import s1 from "../assets/s1.jpg";
 import s2 from "../assets/service2.avif";
 import s3 from "../assets/service3.avif";
@@ -23,13 +21,15 @@ import influencer5 from "../assets/influencer5.png";
 import center from "../assets/center.png";
 import frame from "../assets/Influencer_Card.png";
 import mobileCenter from "../assets/homeimage.png";
-
 import { FaBullseye } from "react-icons/fa";
 import { RiSecurePaymentLine } from "react-icons/ri";
 import { MdOutlineAdminPanelSettings } from "react-icons/md";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 import { BiRocket } from "react-icons/bi";
 import { HiOutlineSparkles } from "react-icons/hi";
+
+
+
 
 const offersData = [
     { title: "Inbound Collabs", icon: <FaBullseye /> },
@@ -39,6 +39,16 @@ const offersData = [
     { title: "Risk Free Execution", icon: <BiRocket /> },
     { title: "Effortless Matchmaking", icon: <HiOutlineSparkles /> },
 ];
+
+const clients = [
+    { img: influencer1, name: "Aishwary Agrawal", followers: "6.3k", type: "Fashion Influencer" },
+    { img: influencer2, name: "Tanisha Sharma", followers: "171k", type: "Lifestyle Creator" },
+    { img: influencer3, name: "Shree Thakur", followers: "62.2k", type: "Fitness Influencer" },
+    { img: influencer4, name: "Neha Jain", followers: "150K", type: "Beauty Influencer" },
+    { img: influencer5, name: "Simran Kaur", followers: "95K", type: "Travel Blogger" },
+];
+
+
 const servicesData = [
     {
         id: "001",
@@ -67,38 +77,40 @@ const servicesData = [
 ];
 
 
-const testimonials = [
-    {
-        name: "Alena Levin",
-        role: "CEO & Co-Founder of ABC Company",
-        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
-        img: "https://randomuser.me/api/portraits/women/68.jpg",
-    },
-    {
-        name: "Alena Levin",
-        role: "CEO & Co-Founder of ABC Company",
-        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        img: "https://randomuser.me/api/portraits/women/69.jpg",
-    },
-    {
-        name: "Alena Levin",
-        role: "CEO & Co-Founder of ABC Company",
-        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        img: "https://randomuser.me/api/portraits/women/65.jpg",
-    },
-    {
-        name: "Alena Levin",
-        role: "CEO & Co-Founder of ABC Company",
-        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        img: "https://randomuser.me/api/portraits/women/66.jpg",
-    },
-    {
-        name: "Alena Levin",
-        role: "CEO & Co-Founder of ABC Company",
-        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        img: "https://randomuser.me/api/portraits/women/67.jpg",
-    },
-];
+
+
+// const testimonials = [
+//     {
+//         name: "Alena Levin",
+//         role: "CEO & Co-Founder of ABC Company",
+//         text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
+//         img: "https://randomuser.me/api/portraits/women/68.jpg",
+//     },
+//     {
+//         name: "Alena Levin",
+//         role: "CEO & Co-Founder of ABC Company",
+//         text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+//         img: "https://randomuser.me/api/portraits/women/69.jpg",
+//     },
+//     {
+//         name: "Alena Levin",
+//         role: "CEO & Co-Founder of ABC Company",
+//         text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+//         img: "https://randomuser.me/api/portraits/women/65.jpg",
+//     },
+//     {
+//         name: "Alena Levin",
+//         role: "CEO & Co-Founder of ABC Company",
+//         text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+//         img: "https://randomuser.me/api/portraits/women/66.jpg",
+//     },
+//     {
+//         name: "Alena Levin",
+//         role: "CEO & Co-Founder of ABC Company",
+//         text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+//         img: "https://randomuser.me/api/portraits/women/67.jpg",
+//     },
+// ];
 
 const Card = ({ data }) => (
     <div className="testimonial-card">
@@ -116,12 +128,12 @@ const Card = ({ data }) => (
     </div>
 );
 
-const clients = [influencer1, influencer2, influencer3, influencer4, influencer5,influencer4];
+// const clients = [influencer1, influencer2, influencer3, influencer4, influencer5, influencer4];
 
 
 const Home = () => {
 
-    
+
 
     const [index, setIndex] = useState(0);
 
@@ -164,7 +176,7 @@ const Home = () => {
     return (
         <section className="home">
 
-            {/*-------------------------------- Top -----------------------------*/}
+            {/*------------------------------- Top -----------------------------*/}
 
             <section className="trusted-section">
 
@@ -269,11 +281,7 @@ const Home = () => {
 
             </section>
 
-
-
-
-
-
+            {/*------------------------------- Stats ----------------------------*/}
 
             <div className="stats">
                 <div className="stats__left">
@@ -308,13 +316,6 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
-
 
             {/*-------------------------------services --------------------------*/}
 
@@ -363,7 +364,6 @@ const Home = () => {
 
             {/*--------------------------------CLIENTS ---------------------------*/}
 
-
             <div className="clients">
 
                 <div className="clients__header">
@@ -381,7 +381,7 @@ const Home = () => {
                 <div className="clients__slider">
                     <div className="clients__track">
 
-                        {[...clients, ...clients].map((img, i) => (
+                        {[...clients, ...clients].map((client, i) => (
                             <div className="clientCard" key={i}>
 
                                 <div className="clientFrame">
@@ -395,10 +395,22 @@ const Home = () => {
 
                                     {/* client image */}
                                     <img
-                                        src={img}
+                                        src={client.img}
                                         className="clientImg"
-                                        alt="client"
+                                        alt={client.name}
                                     />
+
+                                    {/* 🔥 OVERLAY TEXT */}
+                                    <div className="clientOverlay">
+                                        <h4>{client.name}</h4>
+
+                                        {/* 🔥 NEW TYPE */}
+                                        {/* <span className="clientType">{client.type}</span> */}
+
+                                        <p>{client.followers} Followers</p>
+                                        <span className="clientType">{client.type}</span>
+                                    </div>
+
 
                                 </div>
 
@@ -410,14 +422,7 @@ const Home = () => {
 
             </div>
 
-
-            {/*---------------------------------STATS-------------------------------*/}
-
-
-
-
-
-            {/*-----------------------------testimonial--------------------------------*/}
+            {/*-------------------------------testimonial--------------------------------*/}
 
             {/* <section className="testimonial-section">
 
