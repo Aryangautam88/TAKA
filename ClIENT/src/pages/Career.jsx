@@ -28,7 +28,7 @@ const jobs = [
         location: "Indore, M.P",
         type: "Full Time",
         link: "https://forms.gle/YOUR_FORM_LINK",
-        desc: "Drive business growth by acquiring new brand clients and managing partnerships. Pitch influencer marketing solutions, close deals, and maintain client relationships. Strong sales mindset and communication skills are essential."
+        desc: "Drive business growth by acquiring new brand clients and managing partnerships. Pitch influencer marketing solutions, close deals, and maintain client relationships. Strong sales mindset and communication skills are essential.Proficiency in tools  Illustrator is required."
     }
 ];
 
