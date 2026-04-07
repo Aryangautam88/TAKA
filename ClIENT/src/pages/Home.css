@@ -1494,12 +1494,8 @@ body {
     padding: 10px 12px;
     border-radius: 12px;
 
-<<<<<<< HEAD
     background: rgba(255, 255, 255, 0.25);
     /* glass look */
-=======
-    background: rgba(255, 255, 255, 0.25); /* glass look */
->>>>>>> fb94bca148b916f6be9d946f26967d43394b79ce
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 
@@ -1536,12 +1532,8 @@ body {
         padding: 8px 10px;
         border-radius: 10px;
 
-<<<<<<< HEAD
         backdrop-filter: blur(8px);
         /* slightly lighter for mobile */
-=======
-        backdrop-filter: blur(8px); /* slightly lighter for mobile */
->>>>>>> fb94bca148b916f6be9d946f26967d43394b79ce
     }
 
     .clientOverlay h4 {
@@ -1686,7 +1678,7 @@ body {
     border-radius: 20px;
 
     background: rgba(124, 58, 237, 0.15);
-    color:#000 ;
+    color: #000;
 
     font-weight: 600;
 }

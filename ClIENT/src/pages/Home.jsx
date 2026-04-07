@@ -128,17 +128,7 @@ const Card = ({ data }) => (
     </div>
 );
 
-<<<<<<< HEAD
 // const clients = [influencer1, influencer2, influencer3, influencer4, influencer5, influencer4];
-=======
-const clients = [
-    { img: influencer1, name: "Aishwary Agrawal", followers: "6.3k" },
-    { img: influencer2, name: "Tanisha Sharma", followers: "171k" },
-    { img: influencer3, name: "Shree Thakur", followers: "62.2k" },
-    { img: influencer4, name: "Neha Jain", followers: "150K" },
-    { img: influencer5, name: "Simran Kaur", followers: "95K" },
-];
->>>>>>> fb94bca148b916f6be9d946f26967d43394b79ce
 
 
 const Home = () => {
@@ -291,15 +281,7 @@ const Home = () => {
 
             </section>
 
-<<<<<<< HEAD
             {/*------------------------------- Stats ----------------------------*/}
-=======
-
-
-            {/*---------------------------------STATS-------------------------------*/}
-
-
->>>>>>> fb94bca148b916f6be9d946f26967d43394b79ce
 
             <div className="stats">
                 <div className="stats__left">
@@ -421,7 +403,6 @@ const Home = () => {
                                     {/* 🔥 OVERLAY TEXT */}
                                     <div className="clientOverlay">
                                         <h4>{client.name}</h4>
-<<<<<<< HEAD
 
                                         {/* 🔥 NEW TYPE */}
                                         {/* <span className="clientType">{client.type}</span> */}
@@ -431,11 +412,6 @@ const Home = () => {
                                     </div>
 
 
-=======
-                                        <p>{client.followers} Followers</p>
-                                    </div>
-
->>>>>>> fb94bca148b916f6be9d946f26967d43394b79ce
                                 </div>
 
                             </div>
@@ -446,15 +422,7 @@ const Home = () => {
 
             </div>
 
-<<<<<<< HEAD
             {/*-------------------------------testimonial--------------------------------*/}
-=======
-
-
-
-
-            {/*-----------------------------testimonial--------------------------------*/}
->>>>>>> fb94bca148b916f6be9d946f26967d43394b79ce
 
             {/* <section className="testimonial-section">
 
