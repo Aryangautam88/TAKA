@@ -33,7 +33,7 @@ body {
     word-spacing: 40px;
     text-transform: uppercase;
     background: url("../assets/service-bg.png") center/cover no-repeat;
-     background-clip: text;  
+    background-clip: text;  
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Unbounded, "sans-serif";
@@ -239,10 +239,6 @@ body {
     color: rgba(255, 255, 255, 0.05);
     white-space: nowrap;
 }
-
-
-
-
 /* 🔥 TEXT */
 .card-apply-text {
     position: relative;
@@ -276,6 +272,8 @@ body {
     .card-job-top {
         padding: 60px 15px 30px;
     }
+    
+    
 }
 
 /* Small Mobile */

@@ -5,30 +5,30 @@ import heroImg from "../assets/hero-pattern.png";
 const jobs = [
     {
         id: 1,
-        title: "Outreach Specialist",
+        title: "Influencer Outreach Specialist",
         category: "PR & Outreach",
         location: "Indore, M.P",
         type: "Full Time",
         link: "https://forms.gle/ehBSZDHh86WY922h8",
-        desc: "Identify and connect with influencers across platforms like Instagram, YouTube, and LinkedIn. Build strong relationships with creators, manage outreach campaigns, and onboard influencers for brand collaborations. Strong communication and negotiation skills required."
+        desc: "Identify and connect with influencers across platforms like Instagram and YouTube. Build strong relationships, manage outreach campaigns, and onboard creators for brand collaborations while ensuring effective communication and long-term partnerships."
     },
     {
         id: 2,
-        title: "Production",
+        title: "Content & Production Designer",
         category: "Production",
         location: "Indore, M.P",
         type: "Full Time",
         link: "https://forms.gle/3NKW7Ed2cPTQ1RSC7",
-        desc: "Design engaging creatives for influencer campaigns including social media posts, ads, and branding assets. Work closely with marketing and content teams to maintain visual consistency. Proficiency in tools like Figma, Photoshop, or Illustrator is required."
+        desc: "Design engaging visuals for influencer campaigns, advertisements, and social media content. Collaborate with marketing teams to maintain brand consistency while creating impactful creatives using tools like Figma, Photoshop, and Illustrator."
     },
     {
         id: 3,
-        title: "Sales Executive",
-        category: "Graphic Designing",
+        title: "Sales & Brand Partnerships Executive",
+        category: "Sales & Marketing",
         location: "Indore, M.P",
         type: "Full Time",
         link: "https://forms.gle/zHLcno8MLTqVU32J9",
-        desc: "Drive business growth by acquiring new brand clients and managing partnerships. Pitch influencer marketing solutions, close deals, and maintain client relationships. Strong sales mindset and communication skills are essential.Proficiency in tools  Illustrator is required."
+        desc: "Drive business growth by acquiring new brand clients and managing partnerships. Present influencer marketing solutions, close deals, and maintain relationships while ensuring consistent revenue growth and strong client satisfaction & and spelicest."
     }
 ];
 
@@ -43,8 +43,8 @@ const Career = () => {
 
                     <div className="career-nav">
                         <span>Career</span>
-                        <span>Apply Now</span>
-                        <span>Work With Us</span>
+                        <span>Open Positions</span>
+                        <span> Join Us</span>
                     </div>
                 </div>
 
@@ -116,22 +116,23 @@ const Career = () => {
                     {/* LEFT CONTENT */}
                     <div className="hero__content-L">
                         <h1 className="hero__title-L">
-                            Lorem Ipsum Is <span>Simply</span>
+                            Build the Future <span> <br />With Us</span>
                         </h1>
 
                         <p className="hero__desc-L">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                            At TAKA, we’re redefining influencer marketing by connecting creators
+                            with brands in the most seamless way possible. Join a fast-growing team,
+                            work on real-world projects, and build something that truly matters.
                         </p>
 
                         <button className="hero__btn-L">
-                            Get Started →
+                            Join Our Team →
                         </button>
                     </div>
 
                     {/* RIGHT IMAGE */}
                     <div className="hero__image-L">
-                        <img src={heroImg} alt="design" />
+                        <img src={heroImg} alt="career at taka" />
                     </div>
 
                 </div>
